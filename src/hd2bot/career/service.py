@@ -31,6 +31,10 @@ class CareerService:
                 except CareerError as exc:
                     self._failure, self._retry_at = exc, self.clock() + (exc.retry_after or 10)
                     raise
+                except Exception:
+                    exc = CareerError("unavailable")
+                    self._failure, self._retry_at = exc, self.clock() + 10
+                    raise exc from None
                 self._failure = None
                 self._cached = result
                 # Local TTL governs request frequency; original queried_at is never overwritten.
@@ -49,6 +53,17 @@ class CareerService:
             self.client = CareerClient(config, timeout=self.settings.career_timeout)
         return await self.client.query()
 
+    async def _request_user(self, action: str, user_id: str, envelope: str | None = None,
+                            *, share_id=None, chat_type="private"):
+        try:
+            return await self._user_client().request_user(
+                action, user_id, envelope, share_id=share_id, chat_type=chat_type,
+            )
+        except CareerError:
+            raise
+        except Exception:
+            raise CareerError("unavailable") from None
+
     def _user_client(self):
         if self.settings.provider == "mock":
             raise CareerError("mock_mode")
@@ -60,25 +75,29 @@ class CareerService:
         return self.client
 
     async def challenge(self, user_id: str):
-        return await self._user_client().request_user("binding.challenge", user_id)
+        return await self._request_user("binding.challenge", user_id)
 
     async def bind(self, user_id: str, envelope: str):
-        return await self._user_client().request_user("binding.import", user_id, envelope)
+        return await self._request_user("binding.import", user_id, envelope)
 
     async def unbind(self, user_id: str):
-        return await self._user_client().request_user("binding.revoke", user_id)
+        return await self._request_user("binding.revoke", user_id)
 
     async def query_user(self, user_id: str) -> CareerStats:
         # Never reuse the legacy owner's cache for a chat user. The server has per-binding caches.
         if self.settings.provider == "mock":
             return await self.query()
-        return await self._user_client().request_user("career.query", user_id)
+        return await self._request_user("career.query", user_id)
 
     async def query_shared(self, share_id: str, user_id: str, chat_type: str):
-        return await self._user_client().request_user("snapshot.query", user_id, share_id=share_id, chat_type=chat_type)
+        return await self._request_user(
+            "snapshot.query", user_id, share_id=share_id, chat_type=chat_type,
+        )
 
     async def sharing(self, user_id: str, enabled: bool):
-        return await self._user_client().request_user("binding.share" if enabled else "binding.unshare", user_id)
+        return await self._request_user(
+            "binding.share" if enabled else "binding.unshare", user_id,
+        )
 
     async def close(self):
         if self.client is not None:

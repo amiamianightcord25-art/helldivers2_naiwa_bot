@@ -20,6 +20,7 @@ from hd2bot.career.service import CareerService
 from hd2bot.commands.parser import parse_command
 from hd2bot.config import Settings
 from hd2bot.hd2.errors import CommandError
+from hd2bot.presentation import ChatContext
 from hd2bot.qq.adapter import QQAdapter, QQDispatcher
 from hd2bot.router import HELP, CommandRouter
 
@@ -306,6 +307,32 @@ async def test_career_unavailable_does_not_break_other_commands(tmp_path):
     assert '不支持' in await router.handle('战绩 76561198000000000')
     with pytest.raises(CommandError):
         parse_command('查战绩 some-other-person')
+
+
+async def test_career_connection_failure_returns_safe_unavailable_message():
+    client = AsyncMock()
+    client.query.side_effect = OSError("connect 192.0.2.44:8765 failed")
+    career = CareerService(Settings(provider="auto"), client=client)
+    router = CommandRouter(AsyncMock(), career)
+
+    reply = await router.handle("战绩")
+
+    assert reply == "🚨 战绩服务暂时无法连接，请稍后重试。"
+    assert "192.0.2.44" not in reply
+    assert "8765" not in reply
+
+
+async def test_user_career_connection_failure_returns_safe_unavailable_message():
+    client = AsyncMock()
+    client.request_user.side_effect = OSError("Cannot connect to 198.51.100.18:9443")
+    career = CareerService(Settings(provider="auto"), client=client)
+    router = CommandRouter(AsyncMock(), career)
+
+    reply = await router.respond("战绩", context=ChatContext("c2c", "session", "user"))
+
+    assert reply.text == "🚨 战绩服务暂时无法连接，请稍后重试。"
+    assert "198.51.100.18" not in reply.text
+    assert "9443" not in reply.text
 
 
 async def test_mock_career_never_reads_private_config_or_connects(monkeypatch):
