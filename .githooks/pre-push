@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+cd "$(git rev-parse --show-toplevel)"
+if [ -x .venv/Scripts/python.exe ]; then
+  exec .venv/Scripts/python.exe -X utf8 scripts/check_publish.py --all --history
+elif [ -x .venv/bin/python ]; then
+  exec .venv/bin/python scripts/check_publish.py --all --history
+else
+  exec python3 scripts/check_publish.py --all --history
+fi

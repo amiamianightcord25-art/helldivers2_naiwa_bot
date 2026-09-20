@@ -1,0 +1,359 @@
+{
+  "schema": 1,
+  "verified_at": "2026-09-19",
+  "source_url": "https://helldivers.wiki.gg/wiki/Levels?oldid=134866",
+  "max_level": 300,
+  "localization": "游戏内简体中文；按已登录后播放的 1920x1080 游戏实拍逐项核对。",
+  "notes": [
+    "1.007.000（2026-08-12）将等级上限从 150 提至 300。",
+    "按游戏解锁等级排列，140 级列兵是原游戏称号顺序，并非降级。",
+    "仅收录等级解锁称号，排除付费、战债和其他特殊称号。",
+    "中文核对依据实际高清画面；未使用未登录时的 360P 候选转录或繁中转简体替代。"
+  ],
+  "ranks": [
+    {
+      "level": 1,
+      "title": "军校生",
+      "english_name": "Cadet",
+      "source_url": "https://helldivers.wiki.gg/wiki/Cadet",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:01.336",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 5,
+      "title": "太空军校生",
+      "english_name": "Space Cadet",
+      "source_url": "https://helldivers.wiki.gg/wiki/Space_Cadet",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:01.336",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 10,
+      "title": "中士",
+      "english_name": "Sergeant",
+      "source_url": "https://helldivers.wiki.gg/wiki/Sergeant",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:01.336",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 15,
+      "title": "军士长",
+      "english_name": "Master Sergeant",
+      "source_url": "https://helldivers.wiki.gg/wiki/Master_Sergeant",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:01.336",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 20,
+      "title": "军督",
+      "english_name": "Chief",
+      "source_url": "https://helldivers.wiki.gg/wiki/Chief",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:01.336",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 25,
+      "title": "太空军督",
+      "english_name": "Space Chief Prime",
+      "source_url": "https://helldivers.wiki.gg/wiki/Space_Chief_Prime",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:01.336",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 30,
+      "title": "死神少校",
+      "english_name": "Death Captain",
+      "source_url": "https://helldivers.wiki.gg/wiki/Death_Captain",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:01.336",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 35,
+      "title": "元帅",
+      "english_name": "Marshal",
+      "source_url": "https://helldivers.wiki.gg/wiki/Marshal",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:01.336",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 40,
+      "title": "星级元帅",
+      "english_name": "Star Marshal",
+      "source_url": "https://helldivers.wiki.gg/wiki/Star_Marshal",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:01.336",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 45,
+      "title": "上将",
+      "english_name": "Admiral",
+      "source_url": "https://helldivers.wiki.gg/wiki/Admiral",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:17.415",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 50,
+      "title": "骷髅上将",
+      "english_name": "Skull Admiral",
+      "source_url": "https://helldivers.wiki.gg/wiki/Skull_Admiral",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:17.415",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 60,
+      "title": "舰队上将",
+      "english_name": "Fleet Admiral",
+      "source_url": "https://helldivers.wiki.gg/wiki/Fleet_Admiral",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:17.415",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 70,
+      "title": "承敬上将",
+      "english_name": "Admirable Admiral",
+      "source_url": "https://helldivers.wiki.gg/wiki/Admirable_Admiral",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:17.415",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 80,
+      "title": "上尉",
+      "english_name": "Commander",
+      "source_url": "https://helldivers.wiki.gg/wiki/Commander",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:17.415",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 90,
+      "title": "星系指挥官",
+      "english_name": "Galactic Commander",
+      "source_url": "https://helldivers.wiki.gg/wiki/Galactic_Commander",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:17.415",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 100,
+      "title": "地狱上尉",
+      "english_name": "Hell Commander",
+      "source_url": "https://helldivers.wiki.gg/wiki/Hell_Commander",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:17.415",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 110,
+      "title": "将军",
+      "english_name": "General",
+      "source_url": "https://helldivers.wiki.gg/wiki/General",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:22.680",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 120,
+      "title": "五星将军",
+      "english_name": "5-Star General",
+      "source_url": "https://helldivers.wiki.gg/wiki/5-Star_General",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:22.680",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 130,
+      "title": "十星将军",
+      "english_name": "10-Star General",
+      "source_url": "https://helldivers.wiki.gg/wiki/10-Star_General",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:22.680",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 140,
+      "title": "列兵",
+      "english_name": "Private",
+      "source_url": "https://helldivers.wiki.gg/wiki/Private",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:22.680",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 150,
+      "title": "超级列兵",
+      "english_name": "Super Private",
+      "source_url": "https://helldivers.wiki.gg/wiki/Super_Private",
+      "title_source_url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "title_source_timestamp": "00:22.680",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 160,
+      "title": "五星超级列兵",
+      "english_name": "5-Star Super Private",
+      "source_url": "https://helldivers.wiki.gg/wiki/5-Star_Super_Private",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:07.750",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 170,
+      "title": "十星超级列兵",
+      "english_name": "10-Star Super Private",
+      "source_url": "https://helldivers.wiki.gg/wiki/10-Star_Super_Private",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:07.750",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 180,
+      "title": "游骑兵",
+      "english_name": "Ranger",
+      "source_url": "https://helldivers.wiki.gg/wiki/Ranger",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:07.750",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 190,
+      "title": "飞鹰级游骑兵",
+      "english_name": "Ranger, Eagle Class",
+      "source_url": "https://helldivers.wiki.gg/wiki/Ranger,_Eagle_Class",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:07.750",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 200,
+      "title": "白头鹰级游骑兵",
+      "english_name": "Ranger, Bald Eagle Class",
+      "source_url": "https://helldivers.wiki.gg/wiki/Ranger,_Bald_Eagle_Class",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:07.750",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 210,
+      "title": "潜兵长",
+      "english_name": "Divemaster",
+      "source_url": "https://helldivers.wiki.gg/wiki/Divemaster",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:07.750",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 220,
+      "title": "一等潜兵长",
+      "english_name": "First Divemaster",
+      "source_url": "https://helldivers.wiki.gg/wiki/First_Divemaster",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:16.809",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 230,
+      "title": "潜兵长少校",
+      "english_name": "Divemaster Major",
+      "source_url": "https://helldivers.wiki.gg/wiki/Divemaster_Major",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:16.809",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 240,
+      "title": "潜兵长少校指挥官",
+      "english_name": "Command Divemaster Major",
+      "source_url": "https://helldivers.wiki.gg/wiki/Command_Divemaster_Major",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:16.809",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 250,
+      "title": "大师潜兵长",
+      "english_name": "Master Divemaster",
+      "source_url": "https://helldivers.wiki.gg/wiki/Master_Divemaster",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:16.809",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 260,
+      "title": "终极大师潜兵长少校",
+      "english_name": "Master Divemaster Major Omega",
+      "source_url": "https://helldivers.wiki.gg/wiki/Master_Divemaster_Major_Omega",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:16.809",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 270,
+      "title": "最高等级",
+      "english_name": "Max Rank",
+      "source_url": "https://helldivers.wiki.gg/wiki/Max_Rank",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:16.809",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 280,
+      "title": "无限最高等级",
+      "english_name": "Max Rank Infinity",
+      "source_url": "https://helldivers.wiki.gg/wiki/Max_Rank_Infinity",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:32.438",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 290,
+      "title": "无限最高等级+1",
+      "english_name": "Max Rank Infinity +1",
+      "source_url": "https://helldivers.wiki.gg/wiki/Max_Rank_Infinity_%2B1",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:32.438",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    },
+    {
+      "level": 300,
+      "title": "300级",
+      "english_name": "Rank 300",
+      "source_url": "https://helldivers.wiki.gg/wiki/Rank_300",
+      "title_source_url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "title_source_timestamp": "00:32.438",
+      "title_verification": "游戏内简体中文画面，实际视频分辨率 1920x1080"
+    }
+  ],
+  "title_sources": [
+    {
+      "url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "published_at": "2024-05-05",
+      "levels": "1–150",
+      "video_resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "published_at": "2026-08-12",
+      "levels": "160–300",
+      "video_resolution": [
+        1920,
+        1080
+      ]
+    }
+  ]
+}

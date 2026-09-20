@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "pages": {
+    "首页": {
+      "title": "超级地球通讯终端",
+      "rows": [
+        [
+          {
+            "label": "每日签到",
+            "command": "签到"
+          },
+          {
+            "label": "我的等级",
+            "command": "我的等级"
+          }
+        ],
+        [
+          {
+            "label": "战备英雄",
+            "command": "战备英雄"
+          },
+          {
+            "label": "战略看板",
+            "command": "看板"
+          }
+        ],
+        [
+          {
+            "label": "战情查询",
+            "command": "菜单 战情"
+          },
+          {
+            "label": "装备百科",
+            "command": "菜单 百科"
+          }
+        ],
+        [
+          {
+            "label": "生涯战绩",
+            "command": "菜单 生涯"
+          },
+          {
+            "label": "签到与游戏",
+            "command": "菜单 娱乐"
+          }
+        ],
+        [
+          {
+            "label": "小贴士",
+            "command": "小贴士"
+          },
+          {
+            "label": "更新日志",
+            "command": "更新日志"
+          },
+          {
+            "label": "全部帮助",
+            "command": "帮助"
+          }
+        ]
+      ]
+    },
+    "战情": {
+      "title": "银河战情",
+      "rows": [
+        [
+          {
+            "label": "战况",
+            "command": "战况"
+          },
+          {
+            "label": "主线",
+            "command": "主线"
+          },
+          {
+            "label": "看板",
+            "command": "看板"
+          }
+        ],
+        [
+          {
+            "label": "进攻",
+            "command": "进攻"
+          },
+          {
+            "label": "防守",
+            "command": "防守"
+          },
+          {
+            "label": "星图",
+            "command": "星图"
+          }
+        ],
+        [
+          {
+            "label": "DSS",
+            "command": "DSS"
+          },
+          {
+            "label": "DSS票数",
+            "command": "DSS票数"
+          },
+          {
+            "label": "新闻",
+            "command": "新闻"
+          }
+        ],
+        [
+          {
+            "label": "公告",
+            "command": "公告"
+          },
+          {
+            "label": "Steam在线",
+            "command": "Steam在线"
+          }
+        ],
+        [
+          {
+            "label": "返回首页",
+            "command": "菜单"
+          }
+        ]
+      ]
+    },
+    "百科": {
+      "title": "装备与战争债券",
+      "rows": [
+        [
+          {
+            "label": "武器",
+            "command": "武器"
+          },
+          {
+            "label": "战略配备",
+            "command": "战略配备"
+          }
+        ],
+        [
+          {
+            "label": "盔甲",
+            "command": "盔甲"
+          },
+          {
+            "label": "强化资源",
+            "command": "强化资源"
+          }
+        ],
+        [
+          {
+            "label": "装饰",
+            "command": "装饰"
+          },
+          {
+            "label": "战争债券",
+            "command": "战争债券"
+          }
+        ],
+        [
+          {
+            "label": "资料状态",
+            "command": "资料状态"
+          },
+          {
+            "label": "返回首页",
+            "command": "菜单"
+          }
+        ]
+      ]
+    },
+    "生涯": {
+      "title": "生涯战绩与同步",
+      "rows": [
+        [
+          {
+            "label": "查战绩",
+            "command": "战绩"
+          },
+          {
+            "label": "获取战绩",
+            "command": "获取战绩"
+          }
+        ],
+        [
+          {
+            "label": "下载助手",
+            "command": "下载助手"
+          },
+          {
+            "label": "获取验证码",
+            "command": "获取验证码"
+          }
+        ],
+        [
+          {
+            "label": "分享战绩",
+            "command": "分享战绩"
+          },
+          {
+            "label": "同步帮助",
+            "command": "同步帮助"
+          }
+        ],
+        [
+          {
+            "label": "返回首页",
+            "command": "菜单"
+          }
+        ]
+      ]
+    },
+    "娱乐": {
+      "title": "每日签到与战备英雄",
+      "rows": [
+        [
+          {
+            "label": "签到",
+            "command": "签到"
+          },
+          {
+            "label": "我的等级",
+            "command": "我的等级"
+          }
+        ],
+        [
+          {
+            "label": "等级表",
+            "command": "等级表"
+          },
+          {
+            "label": "签到排行",
+            "command": "签到排行"
+          }
+        ],
+        [
+          {
+            "label": "开始游戏",
+            "command": "战备英雄"
+          },
+          {
+            "label": "战备排行",
+            "command": "战备排行"
+          }
+        ],
+        [
+          {
+            "label": "游戏说明",
+            "command": "战备英雄 帮助"
+          },
+          {
+            "label": "结束游戏",
+            "command": "结束战备"
+          }
+        ],
+        [
+          {
+            "label": "小贴士",
+            "command": "小贴士"
+          },
+          {
+            "label": "返回首页",
+            "command": "菜单"
+          }
+        ]
+      ]
+    }
+  }
+}

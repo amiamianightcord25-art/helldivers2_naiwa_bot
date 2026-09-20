@@ -1,0 +1,3538 @@
+{
+  "0": {
+    "name": "超级地球",
+    "english_name": "SUPER EARTH",
+    "aliases": [
+      "SUPER EARTH",
+      "超级地球",
+      "超級地球"
+    ],
+    "sector": "SOL",
+    "biome": "Super Earth",
+    "hazards": []
+  },
+  "1": {
+    "name": "克伦达斯II",
+    "english_name": "KLEN DAHTH II",
+    "aliases": [
+      "KLEN DAHTH II",
+      "克伦达斯II",
+      "克連達斯II"
+    ],
+    "sector": "ALTUS",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "2": {
+    "name": "开拓者V",
+    "english_name": "PATHFINDER V",
+    "aliases": [
+      "PATHFINDER V",
+      "开拓者V",
+      "探路者V"
+    ],
+    "sector": "ALTUS",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "3": {
+    "name": "寡妇港",
+    "english_name": "WIDOW'S HARBOUR",
+    "aliases": [
+      "WIDOW'S HARBOUR",
+      "寡妇港",
+      "寡婦港"
+    ],
+    "sector": "ALTUS",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "4": {
+    "name": "纽黑文",
+    "english_name": "NEW HAVEN",
+    "aliases": [
+      "NEW HAVEN",
+      "纽黑文",
+      "新避風港"
+    ],
+    "sector": "ALTUS",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "5": {
+    "name": "皮伦V",
+    "english_name": "PILEN V",
+    "aliases": [
+      "PILEN V",
+      "皮伦V",
+      "皮倫V"
+    ],
+    "sector": "ALTUS",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "6": {
+    "name": "水瀑主星",
+    "english_name": "HYDROFALL PRIME",
+    "aliases": [
+      "HYDROFALL PRIME",
+      "水瀑主星",
+      "瀑布主星"
+    ],
+    "sector": "BARNARD",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "7": {
+    "name": "泽亚鲁戈西亚",
+    "english_name": "ZEA RUGOSIA",
+    "aliases": [
+      "ZEA RUGOSIA",
+      "泽亚鲁戈西亚",
+      "澤亞魯哥西亞"
+    ],
+    "sector": "BARNARD",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "8": {
+    "name": "达罗斯波特",
+    "english_name": "DARROWSPORT",
+    "aliases": [
+      "DARROWSPORT",
+      "达罗斯波特",
+      "達羅斯港"
+    ],
+    "sector": "BARNARD",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "9": {
+    "name": "福恩斯科古尔II",
+    "english_name": "FORNSKOGUR II",
+    "aliases": [
+      "FORNSKOGUR II",
+      "福恩斯科古尔II",
+      "佛恩斯科葛II"
+    ],
+    "sector": "BARNARD",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "10": {
+    "name": "弥达斯堡",
+    "english_name": "MIDASBURG",
+    "aliases": [
+      "MIDASBURG",
+      "弥达斯堡",
+      "米達斯堡"
+    ],
+    "sector": "BARNARD",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "11": {
+    "name": "刻耳柏洛斯IIIc",
+    "english_name": "CERBERUS IIIc",
+    "aliases": [
+      "CERBERUS IIIc",
+      "刻耳柏洛斯IIIc",
+      "塞伯拉斯IIIc"
+    ],
+    "sector": "CANCRI",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "12": {
+    "name": "繁荣瀑布",
+    "english_name": "PROSPERITY FALLS",
+    "aliases": [
+      "PROSPERITY FALLS",
+      "繁荣瀑布",
+      "繁華瀑布"
+    ],
+    "sector": "CANCRI",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "13": {
+    "name": "欧库VI",
+    "english_name": "OKUL VI",
+    "aliases": [
+      "OKUL VI",
+      "欧库VI",
+      "歐庫爾VI"
+    ],
+    "sector": "GOTHMAR",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "14": {
+    "name": "烈士湾",
+    "english_name": "MARTYR'S BAY",
+    "aliases": [
+      "MARTYR'S BAY",
+      "烈士湾",
+      "烈士灣"
+    ],
+    "sector": "CANTOLUS",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "15": {
+    "name": "弗里敦峰",
+    "english_name": "FREEDOM PEAK",
+    "aliases": [
+      "FREEDOM PEAK",
+      "弗里敦峰",
+      "自由峰"
+    ],
+    "sector": "CANTOLUS",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "16": {
+    "name": "联合堡",
+    "english_name": "FORT UNION",
+    "aliases": [
+      "FORT UNION",
+      "联合堡",
+      "聯盟堡"
+    ],
+    "sector": "CANTOLUS",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "17": {
+    "name": "开尔文奥尔",
+    "english_name": "KELVINOR",
+    "aliases": [
+      "KELVINOR",
+      "开尔文奥尔",
+      "凱文諾"
+    ],
+    "sector": "CANTOLUS",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "18": {
+    "name": "幽灵",
+    "english_name": "WRAITH",
+    "aliases": [
+      "WRAITH",
+      "幽灵",
+      "幽靈"
+    ],
+    "sector": "IDUN",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "19": {
+    "name": "伊格勒",
+    "english_name": "IGLA",
+    "aliases": [
+      "IGLA",
+      "伊格勒",
+      "伊格拉"
+    ],
+    "sector": "KELVIN",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "20": {
+    "name": "新基鲁纳",
+    "english_name": "NEW KIRUNA",
+    "aliases": [
+      "NEW KIRUNA",
+      "新基鲁纳",
+      "新基魯納"
+    ],
+    "sector": "KELVIN",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "21": {
+    "name": "正义堡",
+    "english_name": "FORT JUSTICE",
+    "aliases": [
+      "FORT JUSTICE",
+      "正义堡",
+      "正義堡"
+    ],
+    "sector": "KELVIN",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "22": {
+    "name": "泽格马乐土",
+    "english_name": "ZEGEMA PARADISE",
+    "aliases": [
+      "ZEGEMA PARADISE",
+      "泽格马乐土",
+      "澤蓋瑪天堂"
+    ],
+    "sector": "KELVIN",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "23": {
+    "name": "普罗维登斯",
+    "english_name": "PROVIDENCE",
+    "aliases": [
+      "PROVIDENCE",
+      "普罗维登斯",
+      "普羅維登斯"
+    ],
+    "sector": "IPTUS",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "24": {
+    "name": "普莱默迪亚",
+    "english_name": "PRIMORDIA",
+    "aliases": [
+      "PRIMORDIA",
+      "普莱默迪亚",
+      "普里摩迪亞"
+    ],
+    "sector": "IPTUS",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "25": {
+    "name": "萨尔弗拉",
+    "english_name": "SULFURA",
+    "aliases": [
+      "SULFURA",
+      "萨尔弗拉",
+      "蘇福拉"
+    ],
+    "sector": "CELESTE",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "26": {
+    "name": "努布拉里亚I",
+    "english_name": "NUBLARIA I",
+    "aliases": [
+      "NUBLARIA I",
+      "努布拉里亚I",
+      "努布拉里亞I"
+    ],
+    "sector": "CELESTE",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "27": {
+    "name": "克拉克图",
+    "english_name": "KRAKATWO",
+    "aliases": [
+      "KRAKATWO",
+      "克拉克图",
+      "克拉卡圖"
+    ],
+    "sector": "CELESTE",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "28": {
+    "name": "沃尔泰拉",
+    "english_name": "VOLTERRA",
+    "aliases": [
+      "VOLTERRA",
+      "沃尔泰拉",
+      "佛泰惹"
+    ],
+    "sector": "CELESTE",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "29": {
+    "name": "熔炉",
+    "english_name": "CRUCIBLE",
+    "aliases": [
+      "CRUCIBLE",
+      "熔炉",
+      "坩堝"
+    ],
+    "sector": "KORPUS",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "30": {
+    "name": "帷幕",
+    "english_name": "VEIL",
+    "aliases": [
+      "VEIL",
+      "帷幕"
+    ],
+    "sector": "BARNARD",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "31": {
+    "name": "马尔IV",
+    "english_name": "MARRE IV",
+    "aliases": [
+      "MARRE IV",
+      "马尔IV",
+      "馬爾IV"
+    ],
+    "sector": "BARNARD",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "32": {
+    "name": "庇护堡",
+    "english_name": "FORT SANCTUARY",
+    "aliases": [
+      "FORT SANCTUARY",
+      "庇护堡",
+      "聖所堡"
+    ],
+    "sector": "CANCRI",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "33": {
+    "name": "塞舌尔海滩",
+    "english_name": "SEYSHEL BEACH",
+    "aliases": [
+      "SEYSHEL BEACH",
+      "塞舌尔海滩",
+      "塞席爾灘"
+    ],
+    "sector": "CANCRI",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "34": {
+    "name": "海尔迈尔",
+    "english_name": "HELLMIRE",
+    "aliases": [
+      "HELLMIRE",
+      "海尔迈尔",
+      "黑麥爾"
+    ],
+    "sector": "CANCRI",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "35": {
+    "name": "艾芙鲁维亚",
+    "english_name": "EFFLUVIA",
+    "aliases": [
+      "EFFLUVIA",
+      "艾芙鲁维亚",
+      "艾佛露維亞"
+    ],
+    "sector": "CANCRI",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "36": {
+    "name": "索尔加斯特",
+    "english_name": "SOLGHAST",
+    "aliases": [
+      "SOLGHAST",
+      "索尔加斯特",
+      "索嘉斯特"
+    ],
+    "sector": "GOTHMAR",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "37": {
+    "name": "迪卢维亚",
+    "english_name": "DILUVIA",
+    "aliases": [
+      "DILUVIA",
+      "迪卢维亚",
+      "迪露維亞"
+    ],
+    "sector": "GOTHMAR",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "38": {
+    "name": "维尔伊迪亚主星",
+    "english_name": "VIRIDIA PRIME",
+    "aliases": [
+      "VIRIDIA PRIME",
+      "维尔伊迪亚主星",
+      "維里迪亞主星"
+    ],
+    "sector": "CANTOLUS",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "39": {
+    "name": "欧巴里",
+    "english_name": "OBARI",
+    "aliases": [
+      "OBARI",
+      "欧巴里",
+      "歐巴里"
+    ],
+    "sector": "CANTOLUS",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "40": {
+    "name": "米拉戴什",
+    "english_name": "MYRADESH",
+    "aliases": [
+      "MYRADESH",
+      "米拉戴什",
+      "米拉德許"
+    ],
+    "sector": "IDUN",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "41": {
+    "name": "阿特拉玛",
+    "english_name": "ATRAMA",
+    "aliases": [
+      "ATRAMA",
+      "阿特拉玛",
+      "阿卓瑪"
+    ],
+    "sector": "IDUN",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "42": {
+    "name": "埃梅里亚",
+    "english_name": "EMERIA",
+    "aliases": [
+      "EMERIA",
+      "埃梅里亚",
+      "艾美里亞"
+    ],
+    "sector": "KELVIN",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "43": {
+    "name": "巴勒博斯",
+    "english_name": "BARABOS",
+    "aliases": [
+      "BARABOS",
+      "巴勒博斯",
+      "巴拉博斯"
+    ],
+    "sector": "MARSPIRA",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "44": {
+    "name": "范迈尔",
+    "english_name": "FENMIRE",
+    "aliases": [
+      "FENMIRE",
+      "范迈尔",
+      "芬麥爾"
+    ],
+    "sector": "MARSPIRA",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "45": {
+    "name": "玛斯蒂亚",
+    "english_name": "MASTIA",
+    "aliases": [
+      "MASTIA",
+      "玛斯蒂亚",
+      "馬斯提亞"
+    ],
+    "sector": "TALUS",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "46": {
+    "name": "沙勒斯",
+    "english_name": "SHALLUS",
+    "aliases": [
+      "SHALLUS",
+      "沙勒斯",
+      "沙露斯"
+    ],
+    "sector": "TALUS",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "47": {
+    "name": "克拉克博斯",
+    "english_name": "KRAKABOS",
+    "aliases": [
+      "KRAKABOS",
+      "克拉克博斯",
+      "卡拉卡博"
+    ],
+    "sector": "IPTUS",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "48": {
+    "name": "艾丽迪卡",
+    "english_name": "IRIDICA",
+    "aliases": [
+      "IRIDICA",
+      "艾丽迪卡",
+      "伊梨迪卡"
+    ],
+    "sector": "IPTUS",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "49": {
+    "name": "艾孜泰拉",
+    "english_name": "AZTERRA",
+    "aliases": [
+      "AZTERRA",
+      "艾孜泰拉",
+      "阿茲提拉"
+    ],
+    "sector": "ORION",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "50": {
+    "name": "艾热尔次星",
+    "english_name": "AZUR SECUNDUS",
+    "aliases": [
+      "AZUR SECUNDUS",
+      "艾热尔次星",
+      "阿祖爾次星"
+    ],
+    "sector": "ORION",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "51": {
+    "name": "艾维斯",
+    "english_name": "IVIS",
+    "aliases": [
+      "IVIS",
+      "艾维斯",
+      "艾維斯"
+    ],
+    "sector": "CELESTE",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "52": {
+    "name": "斯利夫",
+    "english_name": "SLIF",
+    "aliases": [
+      "SLIF",
+      "斯利夫",
+      "史里夫"
+    ],
+    "sector": "CELESTE",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "53": {
+    "name": "开勒莫尔",
+    "english_name": "CARAMOOR",
+    "aliases": [
+      "CARAMOOR",
+      "开勒莫尔",
+      "凱拉穆"
+    ],
+    "sector": "KORPUS",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "54": {
+    "name": "喀斯特",
+    "english_name": "KHARST",
+    "aliases": [
+      "KHARST",
+      "喀斯特",
+      "哈斯特"
+    ],
+    "sector": "GALLUX",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "55": {
+    "name": "欧科里亚",
+    "english_name": "EUKORIA",
+    "aliases": [
+      "EUKORIA",
+      "欧科里亚",
+      "攸科里亞"
+    ],
+    "sector": "MORGON",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "56": {
+    "name": "梅里翁",
+    "english_name": "MYRIUM",
+    "aliases": [
+      "MYRIUM",
+      "梅里翁",
+      "米里烏"
+    ],
+    "sector": "MORGON",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "57": {
+    "name": "克斯次星",
+    "english_name": "KERTH SECUNDUS",
+    "aliases": [
+      "KERTH SECUNDUS",
+      "克斯次星"
+    ],
+    "sector": "RICTUS",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "58": {
+    "name": "帕尔什",
+    "english_name": "PARSH",
+    "aliases": [
+      "PARSH",
+      "帕尔什",
+      "帕許"
+    ],
+    "sector": "RICTUS",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "59": {
+    "name": "利夫",
+    "english_name": "REAF",
+    "aliases": [
+      "REAF",
+      "利夫",
+      "里夫"
+    ],
+    "sector": "SALERIA",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "60": {
+    "name": "艾鲁尔塔",
+    "english_name": "IRULTA",
+    "aliases": [
+      "IRULTA",
+      "艾鲁尔塔",
+      "伊魯塔"
+    ],
+    "sector": "SALERIA",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "61": {
+    "name": "艾莫拉斯",
+    "english_name": "EMORATH",
+    "aliases": [
+      "EMORATH",
+      "艾莫拉斯",
+      "埃摩拉"
+    ],
+    "sector": "MERIDIAN",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "62": {
+    "name": "伊尔都纳主星",
+    "english_name": "ILDUNA PRIME",
+    "aliases": [
+      "ILDUNA PRIME",
+      "伊尔都纳主星",
+      "伊杜納主星"
+    ],
+    "sector": "MERIDIAN",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "63": {
+    "name": "深渊",
+    "english_name": "MAW",
+    "aliases": [
+      "MAW",
+      "深渊",
+      "巨嘴"
+    ],
+    "sector": "IDUN",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "64": {
+    "name": "默里迪亚",
+    "english_name": "MERIDIA",
+    "aliases": [
+      "MERIDIA",
+      "默里迪亚",
+      "梅里迪亞"
+    ],
+    "sector": "SAGAN",
+    "biome": "Supercolony",
+    "hazards": []
+  },
+  "65": {
+    "name": "博瑞亚",
+    "english_name": "BOREA",
+    "aliases": [
+      "BOREA",
+      "博瑞亚",
+      "博里亞"
+    ],
+    "sector": "SAGAN",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "66": {
+    "name": "居里亚",
+    "english_name": "CURIA",
+    "aliases": [
+      "CURIA",
+      "居里亚",
+      "庫里亞"
+    ],
+    "sector": "MARSPIRA",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "67": {
+    "name": "塔尔什",
+    "english_name": "TARSH",
+    "aliases": [
+      "TARSH",
+      "塔尔什",
+      "塔許"
+    ],
+    "sector": "MARSPIRA",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "68": {
+    "name": "谢尔特",
+    "english_name": "SHELT",
+    "aliases": [
+      "SHELT",
+      "谢尔特",
+      "雪爾特"
+    ],
+    "sector": "MARSPIRA",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "69": {
+    "name": "因博尔",
+    "english_name": "IMBER",
+    "aliases": [
+      "IMBER",
+      "因博尔",
+      "印博"
+    ],
+    "sector": "TALUS",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "70": {
+    "name": "布里斯提卡",
+    "english_name": "BLISTICA",
+    "aliases": [
+      "BLISTICA",
+      "布里斯提卡"
+    ],
+    "sector": "IPTUS",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "71": {
+    "name": "拉奇",
+    "english_name": "RATCH",
+    "aliases": [
+      "RATCH",
+      "拉奇",
+      "列曲"
+    ],
+    "sector": "IPTUS",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "72": {
+    "name": "尤尔海姆",
+    "english_name": "JULHEIM",
+    "aliases": [
+      "JULHEIM",
+      "尤尔海姆",
+      "約海姆"
+    ],
+    "sector": "XZAR",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "73": {
+    "name": "瓦尔加德",
+    "english_name": "VALGAARD",
+    "aliases": [
+      "VALGAARD",
+      "瓦尔加德",
+      "瓦爾加德"
+    ],
+    "sector": "IPTUS",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "74": {
+    "name": "阿克图勒斯",
+    "english_name": "ARKTURUS",
+    "aliases": [
+      "ARKTURUS",
+      "阿克图勒斯",
+      "亞克土魯斯"
+    ],
+    "sector": "ORION",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "75": {
+    "name": "艾斯克尔",
+    "english_name": "ESKER",
+    "aliases": [
+      "ESKER",
+      "艾斯克尔",
+      "埃斯科"
+    ],
+    "sector": "ORION",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "76": {
+    "name": "泰雷克",
+    "english_name": "TERREK",
+    "aliases": [
+      "TERREK",
+      "泰雷克",
+      "鐵瑞克"
+    ],
+    "sector": "ORION",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "77": {
+    "name": "希勒斯",
+    "english_name": "CIRRUS",
+    "aliases": [
+      "CIRRUS",
+      "希勒斯",
+      "錫瑞斯"
+    ],
+    "sector": "ORION",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "78": {
+    "name": "克里姆西卡",
+    "english_name": "CRIMSICA",
+    "aliases": [
+      "CRIMSICA",
+      "克里姆西卡",
+      "克里姆錫卡"
+    ],
+    "sector": "DRACO",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "79": {
+    "name": "希斯",
+    "english_name": "HEETH",
+    "aliases": [
+      "HEETH",
+      "希斯"
+    ],
+    "sector": "DRACO",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "80": {
+    "name": "维尔德",
+    "english_name": "VELD",
+    "aliases": [
+      "VELD",
+      "维尔德",
+      "威爾德"
+    ],
+    "sector": "",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "81": {
+    "name": "奥尔塔V",
+    "english_name": "ALTA V",
+    "aliases": [
+      "ALTA V",
+      "奥尔塔V",
+      "歐塔V"
+    ],
+    "sector": "",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "82": {
+    "name": "厄西卡XI",
+    "english_name": "URSICA XI",
+    "aliases": [
+      "URSICA XI",
+      "厄西卡XI",
+      "爾西卡XI"
+    ],
+    "sector": "KORPUS",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "83": {
+    "name": "伊纳里",
+    "english_name": "INARI",
+    "aliases": [
+      "INARI",
+      "伊纳里",
+      "伊那里"
+    ],
+    "sector": "KORPUS",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "84": {
+    "name": "斯卡什",
+    "english_name": "SKAASH",
+    "aliases": [
+      "SKAASH",
+      "斯卡什",
+      "史卡什"
+    ],
+    "sector": "URSA",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "85": {
+    "name": "莫拉戴什",
+    "english_name": "MORADESH",
+    "aliases": [
+      "MORADESH",
+      "莫拉戴什",
+      "摩拉德許"
+    ],
+    "sector": "URSA",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "86": {
+    "name": "拉斯普",
+    "english_name": "RASP",
+    "aliases": [
+      "RASP",
+      "拉斯普"
+    ],
+    "sector": "GALLUX",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "87": {
+    "name": "巴希尔",
+    "english_name": "BASHYR",
+    "aliases": [
+      "BASHYR",
+      "巴希尔",
+      "巴希爾"
+    ],
+    "sector": "GALLUX",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "88": {
+    "name": "雷格努斯",
+    "english_name": "REGNUS",
+    "aliases": [
+      "REGNUS",
+      "雷格努斯",
+      "雷格納"
+    ],
+    "sector": "MORGON",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "89": {
+    "name": "莫格",
+    "english_name": "MOG",
+    "aliases": [
+      "MOG",
+      "莫格"
+    ],
+    "sector": "MORGON",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "90": {
+    "name": "瓦尔莫克斯",
+    "english_name": "VALMOX",
+    "aliases": [
+      "VALMOX",
+      "瓦尔莫克斯",
+      "瓦爾摩斯"
+    ],
+    "sector": "RICTUS",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "91": {
+    "name": "伊罗",
+    "english_name": "IRO",
+    "aliases": [
+      "IRO",
+      "伊罗",
+      "伊羅"
+    ],
+    "sector": "RICTUS",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "92": {
+    "name": "格拉夫米尔",
+    "english_name": "GRAFMERE",
+    "aliases": [
+      "GRAFMERE",
+      "格拉夫米尔",
+      "格列夫米爾"
+    ],
+    "sector": "RICTUS",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "93": {
+    "name": "新斯德哥尔摩",
+    "english_name": "NEW STOCKHOLM",
+    "aliases": [
+      "NEW STOCKHOLM",
+      "新斯德哥尔摩",
+      "新斯德哥爾摩"
+    ],
+    "sector": "RICTUS",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "94": {
+    "name": "绿洲",
+    "english_name": "OASIS",
+    "aliases": [
+      "OASIS",
+      "绿洲",
+      "綠洲"
+    ],
+    "sector": "RICTUS",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "95": {
+    "name": "创世主星",
+    "english_name": "GENESIS PRIME",
+    "aliases": [
+      "GENESIS PRIME",
+      "创世主星",
+      "創世紀主星"
+    ],
+    "sector": "RICTUS",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "96": {
+    "name": "32号哨站",
+    "english_name": "OUTPOST 32",
+    "aliases": [
+      "OUTPOST 32",
+      "32号哨站",
+      "32號哨站"
+    ],
+    "sector": "SALERIA",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "97": {
+    "name": "卡利普索",
+    "english_name": "CALYPSO",
+    "aliases": [
+      "CALYPSO",
+      "卡利普索",
+      "卡呂普索"
+    ],
+    "sector": "SALERIA",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "98": {
+    "name": "埃律西昂草原",
+    "english_name": "ELYSIAN MEADOWS",
+    "aliases": [
+      "ELYSIAN MEADOWS",
+      "埃律西昂草原",
+      "伊黎西亞草原"
+    ],
+    "sector": "GUANG",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "99": {
+    "name": "赤血",
+    "english_name": "SANGIS",
+    "aliases": [
+      "SANGIS",
+      "赤血",
+      "血色"
+    ],
+    "sector": "GUANG",
+    "biome": "Deciduous Autumn Forest",
+    "hazards": []
+  },
+  "100": {
+    "name": "特兰道尔",
+    "english_name": "TRANDOR",
+    "aliases": [
+      "TRANDOR",
+      "特兰道尔",
+      "川鐸"
+    ],
+    "sector": "TARRAGON",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "101": {
+    "name": "东铱贸易湾",
+    "english_name": "EAST IRIDIUM TRADING BAY",
+    "aliases": [
+      "EAST IRIDIUM TRADING BAY",
+      "东铱贸易湾",
+      "東銥貿易灣"
+    ],
+    "sector": "TARRAGON",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "102": {
+    "name": "解放岭",
+    "english_name": "LIBERTY RIDGE",
+    "aliases": [
+      "LIBERTY RIDGE",
+      "解放岭",
+      "自由山脊"
+    ],
+    "sector": "MERIDIAN",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "103": {
+    "name": "巴尔德里克主星",
+    "english_name": "BALDRICK PRIME",
+    "aliases": [
+      "BALDRICK PRIME",
+      "巴尔德里克主星",
+      "柏德里克主星"
+    ],
+    "sector": "MERIDIAN",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "104": {
+    "name": "维尔",
+    "english_name": "THE WEIR",
+    "aliases": [
+      "THE WEIR",
+      "维尔",
+      "威爾"
+    ],
+    "sector": "THESEUS",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "105": {
+    "name": "库珀",
+    "english_name": "KUPER",
+    "aliases": [
+      "KUPER",
+      "库珀",
+      "庫柏"
+    ],
+    "sector": "THESEUS",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "106": {
+    "name": "奥斯陆站",
+    "english_name": "OSLO STATION",
+    "aliases": [
+      "OSLO STATION",
+      "奥斯陆站",
+      "奧斯陸太空站"
+    ],
+    "sector": "SAGAN",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "107": {
+    "name": "珀普利IX",
+    "english_name": "PÖPLI IX",
+    "aliases": [
+      "PÖPLI IX",
+      "珀普利IX",
+      "波普里IX"
+    ],
+    "sector": "SAGAN",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "108": {
+    "name": "古恩瓦尔德",
+    "english_name": "GUNVALD",
+    "aliases": [
+      "GUNVALD",
+      "古恩瓦尔德",
+      "古恩瓦德"
+    ],
+    "sector": "XZAR",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "109": {
+    "name": "多尔夫",
+    "english_name": "DOLPH",
+    "aliases": [
+      "DOLPH",
+      "多尔夫",
+      "多夫"
+    ],
+    "sector": "XZAR",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "110": {
+    "name": "贝克温III",
+    "english_name": "BEKVAM III",
+    "aliases": [
+      "BEKVAM III",
+      "贝克温III",
+      "別克文III"
+    ],
+    "sector": "XZAR",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "111": {
+    "name": "杜马提尔",
+    "english_name": "DUMA TYR",
+    "aliases": [
+      "DUMA TYR",
+      "杜马提尔",
+      "杜馬提"
+    ],
+    "sector": "XZAR",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "112": {
+    "name": "佛农井",
+    "english_name": "VERNEN WELLS",
+    "aliases": [
+      "VERNEN WELLS",
+      "佛农井",
+      "威農井"
+    ],
+    "sector": "NANOS",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "113": {
+    "name": "亚萨关隘",
+    "english_name": "AESIR PASS",
+    "aliases": [
+      "AESIR PASS",
+      "亚萨关隘",
+      "埃薩隘"
+    ],
+    "sector": "NANOS",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "114": {
+    "name": "极光湾",
+    "english_name": "AURORA BAY",
+    "aliases": [
+      "AURORA BAY",
+      "极光湾",
+      "極光灣"
+    ],
+    "sector": "TALUS",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "115": {
+    "name": "彭塔",
+    "english_name": "PENTA",
+    "aliases": [
+      "PENTA",
+      "彭塔",
+      "五芒"
+    ],
+    "sector": "TALUS",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "116": {
+    "name": "耶利瓦勒",
+    "english_name": "GAELLIVARE",
+    "aliases": [
+      "GAELLIVARE",
+      "耶利瓦勒",
+      "耶利瓦"
+    ],
+    "sector": "TALUS",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "117": {
+    "name": "佛戈索约斯",
+    "english_name": "VOG-SOJOTH",
+    "aliases": [
+      "VOG-SOJOTH",
+      "佛戈索约斯",
+      "沃格梭悠"
+    ],
+    "sector": "TALUS",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "118": {
+    "name": "基里克",
+    "english_name": "KIRRIK",
+    "aliases": [
+      "KIRRIK",
+      "基里克",
+      "奇里克"
+    ],
+    "sector": "ARTURION",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "119": {
+    "name": "摩尔塔克斯主星",
+    "english_name": "MORTAX PRIME",
+    "aliases": [
+      "MORTAX PRIME",
+      "摩尔塔克斯主星",
+      "摩爾泰斯主星"
+    ],
+    "sector": "ARTURION",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "120": {
+    "name": "威尔福德站",
+    "english_name": "WILFORD STATION",
+    "aliases": [
+      "WILFORD STATION",
+      "威尔福德站",
+      "威福德太空站"
+    ],
+    "sector": "ARTURION",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "121": {
+    "name": "先驱II",
+    "english_name": "PIONEER II",
+    "aliases": [
+      "PIONEER II",
+      "先驱II",
+      "先鋒II"
+    ],
+    "sector": "ARTURION",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "122": {
+    "name": "厄尔森桑兹",
+    "english_name": "ERSON SANDS",
+    "aliases": [
+      "ERSON SANDS",
+      "厄尔森桑兹",
+      "爾森沙地"
+    ],
+    "sector": "L'ESTRADE",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "123": {
+    "name": "索科罗III",
+    "english_name": "SOCORRO III",
+    "aliases": [
+      "SOCORRO III",
+      "索科罗III",
+      "索科羅III"
+    ],
+    "sector": "L'ESTRADE",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "124": {
+    "name": "博尔岩",
+    "english_name": "BORE ROCK",
+    "aliases": [
+      "BORE ROCK",
+      "博尔岩",
+      "伯爾岩"
+    ],
+    "sector": "ORION",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "125": {
+    "name": "芬里尔III",
+    "english_name": "FENRIR III",
+    "aliases": [
+      "FENRIR III",
+      "芬里尔III",
+      "芬里爾III"
+    ],
+    "sector": "ORION",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "126": {
+    "name": "图灵",
+    "english_name": "TURING",
+    "aliases": [
+      "TURING",
+      "图灵",
+      "圖靈"
+    ],
+    "sector": "DRACO",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "127": {
+    "name": "天使投资",
+    "english_name": "ANGEL'S VENTURE",
+    "aliases": [
+      "ANGEL'S VENTURE",
+      "天使投资",
+      "天使探險",
+      "天使之愿",
+      "天使创投"
+    ],
+    "sector": "DRACO",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "128": {
+    "name": "大流士II",
+    "english_name": "DARIUS II",
+    "aliases": [
+      "DARIUS II",
+      "大流士II",
+      "達里爾II"
+    ],
+    "sector": "",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "129": {
+    "name": "天园六IV",
+    "english_name": "ACAMAR IV",
+    "aliases": [
+      "ACAMAR IV",
+      "天园六IV",
+      "天園六IV"
+    ],
+    "sector": "JIN XI",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "130": {
+    "name": "水委一次星",
+    "english_name": "ACHERNAR SECUNDUS",
+    "aliases": [
+      "ACHERNAR SECUNDUS",
+      "水委一次星"
+    ],
+    "sector": "BORGUS",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "131": {
+    "name": "王良三III",
+    "english_name": "ACHIRD III",
+    "aliases": [
+      "ACHIRD III",
+      "王良三III"
+    ],
+    "sector": "BORGUS",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "132": {
+    "name": "房宿四XI",
+    "english_name": "ACRAB XI",
+    "aliases": [
+      "ACRAB XI",
+      "房宿四XI"
+    ],
+    "sector": "URSA",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "133": {
+    "name": "十字架二IX",
+    "english_name": "ACRUX IX",
+    "aliases": [
+      "ACRUX IX",
+      "十字架二IX"
+    ],
+    "sector": "URSA",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "134": {
+    "name": "柳宿增三主星",
+    "english_name": "ACUBENS PRIME",
+    "aliases": [
+      "ACUBENS PRIME",
+      "柳宿增三主星"
+    ],
+    "sector": "GALLUX",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "135": {
+    "name": "弧矢七",
+    "english_name": "ADHARA",
+    "aliases": [
+      "ADHARA",
+      "弧矢七"
+    ],
+    "sector": "GALLUX",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "136": {
+    "name": "艾福亚湾",
+    "english_name": "AFOYAY BAY",
+    "aliases": [
+      "AFOYAY BAY",
+      "艾福亚湾",
+      "阿佛耶灣"
+    ],
+    "sector": "GALLUX",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "137": {
+    "name": "毕宿一5",
+    "english_name": "AIN-5",
+    "aliases": [
+      "AIN-5",
+      "毕宿一5",
+      "畢宿一5"
+    ],
+    "sector": "HANZO",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "138": {
+    "name": "艾列尔特III",
+    "english_name": "ALAIRT III",
+    "aliases": [
+      "ALAIRT III",
+      "艾列尔特III",
+      "艾列爾特III"
+    ],
+    "sector": "HANZO",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "139": {
+    "name": "天大将军一VII",
+    "english_name": "ALAMAK VII",
+    "aliases": [
+      "ALAMAK VII",
+      "天大将军一VII",
+      "天大將軍一VII"
+    ],
+    "sector": "HANZO",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "140": {
+    "name": "右执法",
+    "english_name": "ALARAPH",
+    "aliases": [
+      "ALARAPH",
+      "右执法",
+      "右執法"
+    ],
+    "sector": "AKIRA",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "141": {
+    "name": "织女增三XI",
+    "english_name": "ALATHFAR XI",
+    "aliases": [
+      "ALATHFAR XI",
+      "织女增三XI",
+      "織女增三XI"
+    ],
+    "sector": "AKIRA",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "142": {
+    "name": "安达尔",
+    "english_name": "ANDAR",
+    "aliases": [
+      "ANDAR",
+      "安达尔",
+      "安達爾"
+    ],
+    "sector": "AKIRA",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "143": {
+    "name": "阿斯佩洛斯主星",
+    "english_name": "ASPEROTH PRIME",
+    "aliases": [
+      "ASPEROTH PRIME",
+      "阿斯佩洛斯主星",
+      "埃斯佩勞主星"
+    ],
+    "sector": "AKIRA",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "144": {
+    "name": "参宿五",
+    "english_name": "BELLATRIX",
+    "aliases": [
+      "BELLATRIX",
+      "参宿五",
+      "參宿五"
+    ],
+    "sector": "GUANG",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "145": {
+    "name": "天阴四",
+    "english_name": "BOTEIN",
+    "aliases": [
+      "BOTEIN",
+      "天阴四",
+      "天陰四"
+    ],
+    "sector": "GUANG",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "146": {
+    "name": "欧苏普森",
+    "english_name": "OSUPSAM",
+    "aliases": [
+      "OSUPSAM",
+      "欧苏普森",
+      "歐蘇珊"
+    ],
+    "sector": "TARRAGON",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "147": {
+    "name": "布林克2",
+    "english_name": "BRINK-2",
+    "aliases": [
+      "BRINK-2",
+      "布林克2"
+    ],
+    "sector": "TARRAGON",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "148": {
+    "name": "天垒城一次星",
+    "english_name": "BUNDA SECUNDUS",
+    "aliases": [
+      "BUNDA SECUNDUS",
+      "天垒城一次星",
+      "天壘城一次星"
+    ],
+    "sector": "TARRAGON",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "149": {
+    "name": "老人",
+    "english_name": "CANOPUS",
+    "aliases": [
+      "CANOPUS",
+      "老人",
+      "卡諾普斯"
+    ],
+    "sector": "TARRAGON",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "150": {
+    "name": "王良一",
+    "english_name": "CAPH",
+    "aliases": [
+      "CAPH",
+      "王良一"
+    ],
+    "sector": "THESEUS",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "151": {
+    "name": "北河二",
+    "english_name": "CASTOR",
+    "aliases": [
+      "CASTOR",
+      "北河二"
+    ],
+    "sector": "THESEUS",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "152": {
+    "name": "德尔根",
+    "english_name": "DURGEN",
+    "aliases": [
+      "DURGEN",
+      "德尔根",
+      "迪爾金"
+    ],
+    "sector": "XZAR",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "153": {
+    "name": "德罗普尼尔",
+    "english_name": "DRAUPNIR",
+    "aliases": [
+      "DRAUPNIR",
+      "德罗普尼尔",
+      "德勞普尼"
+    ],
+    "sector": "XZAR",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "154": {
+    "name": "莫特",
+    "english_name": "MORT",
+    "aliases": [
+      "MORT",
+      "莫特",
+      "死亡號角"
+    ],
+    "sector": "XZAR",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "155": {
+    "name": "英格玛",
+    "english_name": "INGMAR",
+    "aliases": [
+      "INGMAR",
+      "英格玛",
+      "因格瑪"
+    ],
+    "sector": "XZAR",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "156": {
+    "name": "查巴尔VII",
+    "english_name": "CHARBAL-VII",
+    "aliases": [
+      "CHARBAL-VII",
+      "查巴尔VII",
+      "查爾博VII"
+    ],
+    "sector": "ANDROMEDA",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "157": {
+    "name": "卡戎主星",
+    "english_name": "CHARON PRIME",
+    "aliases": [
+      "CHARON PRIME",
+      "卡戎主星",
+      "薛戎主星"
+    ],
+    "sector": "NANOS",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "158": {
+    "name": "科埃佩萨IV",
+    "english_name": "CHOEPESSA IV",
+    "aliases": [
+      "CHOEPESSA IV",
+      "科埃佩萨IV",
+      "寇耶佩莎IV"
+    ],
+    "sector": "NANOS",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "159": {
+    "name": "丘伊",
+    "english_name": "CHOOHE",
+    "aliases": [
+      "CHOOHE",
+      "丘伊"
+    ],
+    "sector": "LACAILLE",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "160": {
+    "name": "雀特湾",
+    "english_name": "CHORT BAY",
+    "aliases": [
+      "CHORT BAY",
+      "雀特湾",
+      "雀特灣"
+    ],
+    "sector": "LACAILLE",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "161": {
+    "name": "可洛尔",
+    "english_name": "CLAORELL",
+    "aliases": [
+      "CLAORELL",
+      "可洛尔",
+      "克勞瑞"
+    ],
+    "sector": "TANIS",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "162": {
+    "name": "克拉萨",
+    "english_name": "CLASA",
+    "aliases": [
+      "CLASA",
+      "克拉萨",
+      "克拉薩"
+    ],
+    "sector": "TANIS",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "163": {
+    "name": "戴米尔基",
+    "english_name": "DEMIURG",
+    "aliases": [
+      "DEMIURG",
+      "戴米尔基",
+      "戴米爾格"
+    ],
+    "sector": "TANIS",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "164": {
+    "name": "天津四次星",
+    "english_name": "DENEB SECUNDUS",
+    "aliases": [
+      "DENEB SECUNDUS",
+      "天津四次星"
+    ],
+    "sector": "ARTURION",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "165": {
+    "name": "昴宿一湾",
+    "english_name": "ELECTRA BAY",
+    "aliases": [
+      "ELECTRA BAY",
+      "昴宿一湾",
+      "昴宿一灣"
+    ],
+    "sector": "ARTURION",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "166": {
+    "name": "安努力亚",
+    "english_name": "ENULIALE",
+    "aliases": [
+      "ENULIALE",
+      "安努力亚",
+      "埃努里阿雷"
+    ],
+    "sector": "L'ESTRADE",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "167": {
+    "name": "艾普斯林芬赛斯VI",
+    "english_name": "EPSILON PHOENCIS VI",
+    "aliases": [
+      "EPSILON PHOENCIS VI",
+      "艾普斯林芬赛斯VI",
+      "艾普斯林芬賽斯VI"
+    ],
+    "sector": "L'ESTRADE",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "168": {
+    "name": "艾拉特主星",
+    "english_name": "ERATA PRIME",
+    "aliases": [
+      "ERATA PRIME",
+      "艾拉特主星",
+      "埃拉他主星"
+    ],
+    "sector": "MIRIN",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "169": {
+    "name": "伊斯塔努",
+    "english_name": "ESTANU",
+    "aliases": [
+      "ESTANU",
+      "伊斯塔努",
+      "埃斯塔努"
+    ],
+    "sector": "DRACO",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "170": {
+    "name": "佛里主星",
+    "english_name": "FORI PRIME",
+    "aliases": [
+      "FORI PRIME",
+      "佛里主星"
+    ],
+    "sector": "DRACO",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "171": {
+    "name": "十字架一",
+    "english_name": "GACRUX",
+    "aliases": [
+      "GACRUX",
+      "十字架一"
+    ],
+    "sector": "JIN XI",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "172": {
+    "name": "轧尔哈伦",
+    "english_name": "GAR HAREN",
+    "aliases": [
+      "GAR HAREN",
+      "轧尔哈伦",
+      "軋爾哈倫"
+    ],
+    "sector": "JIN XI",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "173": {
+    "name": "盖尔崔亚",
+    "english_name": "GATRIA",
+    "aliases": [
+      "GATRIA",
+      "盖尔崔亚",
+      "蓋爾崔亞"
+    ],
+    "sector": "JIN XI",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "174": {
+    "name": "贯索四",
+    "english_name": "GEMMA",
+    "aliases": [
+      "GEMMA",
+      "贯索四",
+      "貫索四"
+    ],
+    "sector": "URSA",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "175": {
+    "name": "大艾伦特",
+    "english_name": "GRAND ERRANT",
+    "aliases": [
+      "GRAND ERRANT",
+      "大艾伦特",
+      "大艾倫特"
+    ],
+    "sector": "URSA",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "176": {
+    "name": "马腹一",
+    "english_name": "HADAR",
+    "aliases": [
+      "HADAR",
+      "马腹一",
+      "馬腹一"
+    ],
+    "sector": "FERRIS",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "177": {
+    "name": "哈卡",
+    "english_name": "HAKA",
+    "aliases": [
+      "HAKA",
+      "哈卡"
+    ],
+    "sector": "FERRIS",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "178": {
+    "name": "海德斯",
+    "english_name": "HALDUS",
+    "aliases": [
+      "HALDUS",
+      "海德斯",
+      "哈都斯"
+    ],
+    "sector": "FERRIS",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "179": {
+    "name": "海利斯港",
+    "english_name": "HALIES PORT",
+    "aliases": [
+      "HALIES PORT",
+      "海利斯港"
+    ],
+    "sector": "FERRIS",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "180": {
+    "name": "赫尔松次星",
+    "english_name": "HERTHON SECUNDUS",
+    "aliases": [
+      "HERTHON SECUNDUS",
+      "赫尔松次星",
+      "赫松次星"
+    ],
+    "sector": "FERRIS",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "181": {
+    "name": "海索主星",
+    "english_name": "HESOE PRIME",
+    "aliases": [
+      "HESOE PRIME",
+      "海索主星",
+      "赫索主星"
+    ],
+    "sector": "FERRIS",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "182": {
+    "name": "角宿二湾",
+    "english_name": "HEZE BAY",
+    "aliases": [
+      "HEZE BAY",
+      "角宿二湾",
+      "角宿二灣"
+    ],
+    "sector": "HANZO",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "183": {
+    "name": "霍尔特",
+    "english_name": "HORT",
+    "aliases": [
+      "HORT",
+      "霍尔特",
+      "霍特"
+    ],
+    "sector": "HANZO",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "184": {
+    "name": "海德罗毕亚斯",
+    "english_name": "HYDROBIUS",
+    "aliases": [
+      "HYDROBIUS",
+      "海德罗毕亚斯",
+      "哈卓畢亞斯"
+    ],
+    "sector": "OMEGA",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "185": {
+    "name": "卡利亚",
+    "english_name": "KARLIA",
+    "aliases": [
+      "KARLIA",
+      "卡利亚",
+      "卡里亞"
+    ],
+    "sector": "OMEGA",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "186": {
+    "name": "九州殊口增七",
+    "english_name": "KEID",
+    "aliases": [
+      "KEID",
+      "九州殊口增七",
+      "九州殊口增十一"
+    ],
+    "sector": "AKIRA",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "187": {
+    "name": "勘达尔克",
+    "english_name": "KHANDARK",
+    "aliases": [
+      "KHANDARK",
+      "勘达尔克",
+      "可汗達克"
+    ],
+    "sector": "GUANG",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "188": {
+    "name": "克拉卡5",
+    "english_name": "KLAKA 5",
+    "aliases": [
+      "KLAKA 5",
+      "克拉卡5",
+      "克拉卡5號"
+    ],
+    "sector": "ALSTRAD",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "189": {
+    "name": "克奈斯港",
+    "english_name": "KNETH PORT",
+    "aliases": [
+      "KNETH PORT",
+      "克奈斯港",
+      "克涅斯港"
+    ],
+    "sector": "ALSTRAD",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "190": {
+    "name": "轸宿四",
+    "english_name": "KRAZ",
+    "aliases": [
+      "KRAZ",
+      "轸宿四",
+      "軫宿四"
+    ],
+    "sector": "ALSTRAD",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "191": {
+    "name": "天棓二",
+    "english_name": "KUMA",
+    "aliases": [
+      "KUMA",
+      "天棓二",
+      "天龍座"
+    ],
+    "sector": "ALSTRAD",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "192": {
+    "name": "赖斯斗夫",
+    "english_name": "LASTOFE",
+    "aliases": [
+      "LASTOFE",
+      "赖斯斗夫",
+      "拉斯托"
+    ],
+    "sector": "THESEUS",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "193": {
+    "name": "蓝恩次星",
+    "english_name": "LENG SECUNDUS",
+    "aliases": [
+      "LENG SECUNDUS",
+      "蓝恩次星",
+      "雷恩次星"
+    ],
+    "sector": "THESEUS",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "194": {
+    "name": "尾宿八",
+    "english_name": "LESATH",
+    "aliases": [
+      "LESATH",
+      "尾宿八"
+    ],
+    "sector": "SEVERIN",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "195": {
+    "name": "昴宿四",
+    "english_name": "MAIA",
+    "aliases": [
+      "MAIA",
+      "昴宿四"
+    ],
+    "sector": "SEVERIN",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "196": {
+    "name": "麦拉芬蒙河",
+    "english_name": "MALEVELON CREEK",
+    "aliases": [
+      "MALEVELON CREEK",
+      "麦拉芬蒙河",
+      "馬勒維隆溪"
+    ],
+    "sector": "ANDROMEDA",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "197": {
+    "name": "蒙特斯",
+    "english_name": "MANTES",
+    "aliases": [
+      "MANTES",
+      "蒙特斯",
+      "曼提斯"
+    ],
+    "sector": "ANDROMEDA",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "198": {
+    "name": "玛尔法克",
+    "english_name": "MARFARK",
+    "aliases": [
+      "MARFARK",
+      "玛尔法克",
+      "瑪爾法克"
+    ],
+    "sector": "ANDROMEDA",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "199": {
+    "name": "玛尔特",
+    "english_name": "MARTALE",
+    "aliases": [
+      "MARTALE",
+      "玛尔特",
+      "馬塔爾"
+    ],
+    "sector": "ANDROMEDA",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "200": {
+    "name": "玛塔",
+    "english_name": "MATAR BAY",
+    "aliases": [
+      "MATAR BAY",
+      "玛塔",
+      "瑪塔灣"
+    ],
+    "sector": "LACAILLE",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "201": {
+    "name": "觜宿一",
+    "english_name": "MEISSA",
+    "aliases": [
+      "MEISSA",
+      "觜宿一"
+    ],
+    "sector": "LACAILLE",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "202": {
+    "name": "井宿七",
+    "english_name": "MEKBUDA",
+    "aliases": [
+      "MEKBUDA",
+      "井宿七"
+    ],
+    "sector": "LACAILLE",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "203": {
+    "name": "库楼三",
+    "english_name": "MENKENT",
+    "aliases": [
+      "MENKENT",
+      "库楼三",
+      "庫樓三"
+    ],
+    "sector": "LACAILLE",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "204": {
+    "name": "北斗二",
+    "english_name": "MERAK",
+    "aliases": [
+      "MERAK",
+      "北斗二"
+    ],
+    "sector": "TANIS",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "205": {
+    "name": "玄戈增二IV",
+    "english_name": "MERGA IV",
+    "aliases": [
+      "MERGA IV",
+      "玄戈增二IV"
+    ],
+    "sector": "TANIS",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "206": {
+    "name": "敏切尔",
+    "english_name": "MINCHIR",
+    "aliases": [
+      "MINCHIR",
+      "敏切尔",
+      "敏雀特"
+    ],
+    "sector": "ARTURION",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "207": {
+    "name": "敏托瑞亚",
+    "english_name": "MINTORIA",
+    "aliases": [
+      "MINTORIA",
+      "敏托瑞亚",
+      "敏托里亞"
+    ],
+    "sector": "ARTURION",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "208": {
+    "name": "摩帝亚9",
+    "english_name": "MORDIA 9",
+    "aliases": [
+      "MORDIA 9",
+      "摩帝亚9",
+      "摩爾迪亞9號"
+    ],
+    "sector": "ARTURION",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "209": {
+    "name": "那贝塔次星",
+    "english_name": "NABATEA SECUNDUS",
+    "aliases": [
+      "NABATEA SECUNDUS",
+      "那贝塔次星",
+      "納巴忒亞次星"
+    ],
+    "sector": "L'ESTRADE",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "210": {
+    "name": "阁道二",
+    "english_name": "NAVI VII",
+    "aliases": [
+      "NAVI VII",
+      "阁道二",
+      "奈維VII"
+    ],
+    "sector": "L'ESTRADE",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "211": {
+    "name": "尼维尔43",
+    "english_name": "NIVEL 43",
+    "aliases": [
+      "NIVEL 43",
+      "尼维尔43",
+      "尼威爾43號"
+    ],
+    "sector": "MIRIN",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "212": {
+    "name": "欧绍恩",
+    "english_name": "OSHAUNE",
+    "aliases": [
+      "OSHAUNE",
+      "欧绍恩",
+      "歐夏烏"
+    ],
+    "sector": "MIRIN",
+    "biome": "Hive World",
+    "hazards": []
+  },
+  "213": {
+    "name": "欧维果主星",
+    "english_name": "OVERGOE PRIME",
+    "aliases": [
+      "OVERGOE PRIME",
+      "欧维果主星",
+      "歐維勾主星"
+    ],
+    "sector": "MIRIN",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "214": {
+    "name": "帕狄恩XXIV",
+    "english_name": "PANDION-XXIV",
+    "aliases": [
+      "PANDION-XXIV",
+      "帕狄恩XXIV",
+      "潘迪恩XXIV"
+    ],
+    "sector": "JIN XI",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "215": {
+    "name": "帕尔晨",
+    "english_name": "PARTION",
+    "aliases": [
+      "PARTION",
+      "帕尔晨",
+      "帕伊恩"
+    ],
+    "sector": "JIN XI",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "216": {
+    "name": "孔雀十一",
+    "english_name": "PEACOCK",
+    "aliases": [
+      "PEACOCK",
+      "孔雀十一"
+    ],
+    "sector": "JIN XI",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "217": {
+    "name": "丈人一湾",
+    "english_name": "PHACT BAY",
+    "aliases": [
+      "PHACT BAY",
+      "丈人一湾",
+      "丈人一灣"
+    ],
+    "sector": "JIN XI",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "218": {
+    "name": "北极一次星",
+    "english_name": "PHERKAD SECUNDUS",
+    "aliases": [
+      "PHERKAD SECUNDUS",
+      "北极一次星",
+      "北極一次星"
+    ],
+    "sector": "FARSIGHT",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "219": {
+    "name": "北极星主星",
+    "english_name": "POLARIS PRIME",
+    "aliases": [
+      "POLARIS PRIME",
+      "北极星主星",
+      "北極星主星"
+    ],
+    "sector": "FARSIGHT",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "220": {
+    "name": "北河三31",
+    "english_name": "POLLUX 31",
+    "aliases": [
+      "POLLUX 31",
+      "北河三31",
+      "北河三31號"
+    ],
+    "sector": "LEO",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "221": {
+    "name": "普拉萨",
+    "english_name": "PRASA",
+    "aliases": [
+      "PRASA",
+      "普拉萨",
+      "普拉薩"
+    ],
+    "sector": "LEO",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "222": {
+    "name": "五诸侯三",
+    "english_name": "PROPUS",
+    "aliases": [
+      "PROPUS",
+      "五诸侯三",
+      "五諸侯三"
+    ],
+    "sector": "LEO",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "223": {
+    "name": "帝座",
+    "english_name": "RAS ALGETHI",
+    "aliases": [
+      "RAS ALGETHI",
+      "帝座"
+    ],
+    "sector": "LEO",
+    "biome": "Tundra",
+    "hazards": []
+  },
+  "224": {
+    "name": "RD4",
+    "english_name": "RD-4",
+    "aliases": [
+      "RD-4",
+      "RD4"
+    ],
+    "sector": "RIGEL",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "225": {
+    "name": "罗格5",
+    "english_name": "ROGUE 5",
+    "aliases": [
+      "ROGUE 5",
+      "罗格5",
+      "蠻野5號"
+    ],
+    "sector": "RIGEL",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "226": {
+    "name": "里尔加湾",
+    "english_name": "RIRGA BAY",
+    "aliases": [
+      "RIRGA BAY",
+      "里尔加湾",
+      "里爾加灣"
+    ],
+    "sector": "RIGEL",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "227": {
+    "name": "西斯",
+    "english_name": "SEASSE",
+    "aliases": [
+      "SEASSE",
+      "西斯",
+      "西希"
+    ],
+    "sector": "RIGEL",
+    "biome": "ACCESS DENIED",
+    "hazards": []
+  },
+  "228": {
+    "name": "新戈23",
+    "english_name": "SENGE 23",
+    "aliases": [
+      "SENGE 23",
+      "新戈23",
+      "仙蓋23號"
+    ],
+    "sector": "OMEGA",
+    "biome": "Rocky Canyons",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "229": {
+    "name": "赛提亚",
+    "english_name": "SETIA",
+    "aliases": [
+      "SETIA",
+      "赛提亚",
+      "賽提亞"
+    ],
+    "sector": "OMEGA",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "230": {
+    "name": "赛特",
+    "english_name": "SHETE",
+    "aliases": [
+      "SHETE",
+      "赛特",
+      "西泰"
+    ],
+    "sector": "AKIRA",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "231": {
+    "name": "席姆纳特",
+    "english_name": "SIEMNOT",
+    "aliases": [
+      "SIEMNOT",
+      "席姆纳特",
+      "星納特"
+    ],
+    "sector": "AKIRA",
+    "biome": "Ionic Jungle",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "232": {
+    "name": "天狼星",
+    "english_name": "SIRIUS",
+    "aliases": [
+      "SIRIUS",
+      "天狼星"
+    ],
+    "sector": "XI TAURI",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "233": {
+    "name": "斯卡特湾",
+    "english_name": "SKAT BAY",
+    "aliases": [
+      "SKAT BAY",
+      "斯卡特湾",
+      "史卡特灣"
+    ],
+    "sector": "XI TAURI",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "234": {
+    "name": "斯飞利昂",
+    "english_name": "SPHERION",
+    "aliases": [
+      "SPHERION",
+      "斯飞利昂",
+      "史飛里昂"
+    ],
+    "sector": "QUINTUS",
+    "biome": "Volcanic Jungle",
+    "hazards": [
+      "Volcanic Activity"
+    ]
+  },
+  "235": {
+    "name": "斯特萨主星",
+    "english_name": "STOR THA PRIME",
+    "aliases": [
+      "STOR THA PRIME",
+      "斯特萨主星",
+      "史托塔主星"
+    ],
+    "sector": "QUINTUS",
+    "biome": "Boneyard",
+    "hazards": []
+  },
+  "236": {
+    "name": "斯图尔特",
+    "english_name": "STOUT",
+    "aliases": [
+      "STOUT",
+      "斯图尔特",
+      "斯朵爾特"
+    ],
+    "sector": "QUINTUS",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "237": {
+    "name": "特尔玛登",
+    "english_name": "TERMADON",
+    "aliases": [
+      "TERMADON",
+      "特尔玛登",
+      "塔瑪登"
+    ],
+    "sector": "QUINTUS",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "238": {
+    "name": "提比特",
+    "english_name": "TIBIT",
+    "aliases": [
+      "TIBIT",
+      "提比特",
+      "堤比特"
+    ],
+    "sector": "SEVERIN",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "239": {
+    "name": "天关",
+    "english_name": "TIEN KWAN",
+    "aliases": [
+      "TIEN KWAN",
+      "天关",
+      "天關"
+    ],
+    "sector": "SEVERIN",
+    "biome": "Boneyard",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "240": {
+    "name": "特鲁斯特",
+    "english_name": "TROOST",
+    "aliases": [
+      "TROOST",
+      "特鲁斯特",
+      "楚斯特"
+    ],
+    "sector": "SEVERIN",
+    "biome": "Deadlands",
+    "hazards": []
+  },
+  "241": {
+    "name": "乌巴尼亚",
+    "english_name": "UBANEA",
+    "aliases": [
+      "UBANEA",
+      "乌巴尼亚",
+      "烏巴內亞"
+    ],
+    "sector": "SEVERIN",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "242": {
+    "name": "伍斯特图",
+    "english_name": "USTOTU",
+    "aliases": [
+      "USTOTU",
+      "伍斯特图",
+      "烏斯托圖"
+    ],
+    "sector": "TRIGON",
+    "biome": "Desert Cliffs",
+    "hazards": [
+      "Tremors"
+    ]
+  },
+  "243": {
+    "name": "万达隆IV",
+    "english_name": "VANDALON IV",
+    "aliases": [
+      "VANDALON IV",
+      "万达隆IV",
+      "凡達倫IV"
+    ],
+    "sector": "TRIGON",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "244": {
+    "name": "瓦瑞拉亚5",
+    "english_name": "VARYLIA 5",
+    "aliases": [
+      "VARYLIA 5",
+      "瓦瑞拉亚5",
+      "瓦里亞5號"
+    ],
+    "sector": "VALDIS",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "245": {
+    "name": "天樽二",
+    "english_name": "WASAT",
+    "aliases": [
+      "WASAT",
+      "天樽二"
+    ],
+    "sector": "VALDIS",
+    "biome": "Acidic Badlands",
+    "hazards": [
+      "Acid Storms"
+    ]
+  },
+  "246": {
+    "name": "织女一湾",
+    "english_name": "VEGA BAY",
+    "aliases": [
+      "VEGA BAY",
+      "织女一湾",
+      "織女一灣"
+    ],
+    "sector": "YMIR",
+    "biome": "Icy Glaciers",
+    "hazards": [
+      "Blizzards"
+    ]
+  },
+  "247": {
+    "name": "弧矢一",
+    "english_name": "WEZEN",
+    "aliases": [
+      "WEZEN",
+      "弧矢一"
+    ],
+    "sector": "YMIR",
+    "biome": "Scorched Moor",
+    "hazards": [
+      "Fire Tornadoes"
+    ]
+  },
+  "248": {
+    "name": "文德米塔里克斯主星",
+    "english_name": "VINDEMITARIX PRIME",
+    "aliases": [
+      "VINDEMITARIX PRIME",
+      "文德米塔里克斯主星",
+      "溫德米塔里主星"
+    ],
+    "sector": "YMIR",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "249": {
+    "name": "X45",
+    "english_name": "X-45",
+    "aliases": [
+      "X-45",
+      "X45"
+    ],
+    "sector": "YMIR",
+    "biome": "Basic Swamp",
+    "hazards": []
+  },
+  "250": {
+    "name": "天市右垣九",
+    "english_name": "YED PRIOR",
+    "aliases": [
+      "YED PRIOR",
+      "天市右垣九"
+    ],
+    "sector": "TANIS",
+    "biome": "Ionic Crimson",
+    "hazards": [
+      "Ion Storms"
+    ]
+  },
+  "251": {
+    "name": "赛飞亚",
+    "english_name": "ZEFIA",
+    "aliases": [
+      "ZEFIA",
+      "赛飞亚",
+      "澤菲亞"
+    ],
+    "sector": "TANIS",
+    "biome": "Ethereal Jungle",
+    "hazards": []
+  },
+  "252": {
+    "name": "太微右垣五",
+    "english_name": "ZOSMA",
+    "aliases": [
+      "ZOSMA",
+      "太微右垣五"
+    ],
+    "sector": "GELLERT",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "253": {
+    "name": "藏尼亚主星",
+    "english_name": "ZZANIAH PRIME",
+    "aliases": [
+      "ZZANIAH PRIME",
+      "藏尼亚主星",
+      "贊伊亞主星"
+    ],
+    "sector": "GELLERT",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "254": {
+    "name": "斯基特",
+    "english_name": "SKITTER",
+    "aliases": [
+      "SKITTER",
+      "斯基特",
+      "斯其特"
+    ],
+    "sector": "HAWKING",
+    "biome": "Haunted Swamp",
+    "hazards": []
+  },
+  "255": {
+    "name": "欧福利亚III",
+    "english_name": "EUPHORIA III",
+    "aliases": [
+      "EUPHORIA III",
+      "欧福利亚III",
+      "歡快III"
+    ],
+    "sector": "HAWKING",
+    "biome": "Moon",
+    "hazards": [
+      "Meteor Storms"
+    ]
+  },
+  "256": {
+    "name": "大流散X",
+    "english_name": "DIASPORA X",
+    "aliases": [
+      "DIASPORA X",
+      "大流散X",
+      "僑居X"
+    ],
+    "sector": "L'ESTRADE",
+    "biome": "Desert Dunes",
+    "hazards": [
+      "Sandstorms"
+    ]
+  },
+  "257": {
+    "name": "宝石崖",
+    "english_name": "GEMSTONE BLUFFS",
+    "aliases": [
+      "GEMSTONE BLUFFS",
+      "宝石崖",
+      "寶石崖"
+    ],
+    "sector": "L'ESTRADE",
+    "biome": "Plains",
+    "hazards": []
+  },
+  "258": {
+    "name": "扎贡主星",
+    "english_name": "ZAGON PRIME",
+    "aliases": [
+      "ZAGON PRIME",
+      "扎贡主星",
+      "傑貢主星"
+    ],
+    "sector": "L'ESTRADE",
+    "biome": "Hive World",
+    "hazards": []
+  },
+  "259": {
+    "name": "奥密克戎",
+    "english_name": "OMICRON",
+    "aliases": [
+      "OMICRON",
+      "奥密克戎",
+      "歐米克朗"
+    ],
+    "sector": "L'ESTRADE",
+    "biome": "Hive World",
+    "hazards": []
+  },
+  "260": {
+    "name": "生化斯坦",
+    "english_name": "CYBERSTAN",
+    "aliases": [
+      "CYBERSTAN",
+      "生化斯坦"
+    ],
+    "sector": "VALDIS",
+    "biome": "Cyberstan Megafactory",
+    "hazards": []
+  },
+  "261": {
+    "name": "费里",
+    "english_name": "FURY",
+    "aliases": [
+      "FURY",
+      "费里",
+      "狂怒"
+    ],
+    "sector": "SOL",
+    "biome": "Magma",
+    "hazards": []
+  },
+  "262": {
+    "name": "K",
+    "english_name": "K",
+    "aliases": [
+      "K"
+    ],
+    "sector": "SOL",
+    "biome": "Magma",
+    "hazards": []
+  },
+  "264": {
+    "name": "新悟",
+    "english_name": "NEW INSIGHT",
+    "aliases": [
+      "NEW INSIGHT",
+      "新悟",
+      "新洞察"
+    ],
+    "sector": "SOL",
+    "biome": "Magma",
+    "hazards": []
+  },
+  "265": {
+    "name": "逸泊",
+    "english_name": "WAYWARD",
+    "aliases": [
+      "WAYWARD",
+      "逸泊",
+      "迷途"
+    ],
+    "sector": "SOL",
+    "biome": "Magma",
+    "hazards": []
+  },
+  "266": {
+    "name": "莫克斯",
+    "english_name": "MOX",
+    "aliases": [
+      "MOX",
+      "莫克斯"
+    ],
+    "sector": "SOL",
+    "biome": "Magma",
+    "hazards": []
+  },
+  "267": {
+    "name": "巨岩",
+    "english_name": "BIG ROCK",
+    "aliases": [
+      "BIG ROCK",
+      "巨岩",
+      "巨石"
+    ],
+    "sector": "SOL",
+    "biome": "Desert Oasis",
+    "hazards": []
+  },
+  "268": {
+    "name": "富源",
+    "english_name": "LUXURIANT",
+    "aliases": [
+      "LUXURIANT",
+      "富源",
+      "豐茂"
+    ],
+    "sector": "SOL",
+    "biome": "Deciduous Forest",
+    "hazards": []
+  },
+  "269": {
+    "name": "璨光",
+    "english_name": "BRILLIANCE",
+    "aliases": [
+      "BRILLIANCE",
+      "璨光",
+      "輝煌"
+    ],
+    "sector": "SOL",
+    "biome": "Deciduous Forest",
+    "hazards": []
+  },
+  "270": {
+    "name": "边陲",
+    "english_name": "FRONTERIA",
+    "aliases": [
+      "FRONTERIA",
+      "边陲",
+      "佛隆泰里亞"
+    ],
+    "sector": "SOL",
+    "biome": "Desert Oasis",
+    "hazards": []
+  },
+  "271": {
+    "name": "齐戈斯",
+    "english_name": "ZYGOS",
+    "aliases": [
+      "ZYGOS",
+      "齐戈斯",
+      "齊戈斯"
+    ],
+    "sector": "SOL",
+    "biome": "Desert Oasis",
+    "hazards": []
+  },
+  "272": {
+    "name": "巴斯金VIII",
+    "english_name": "BASQUINE VIII",
+    "aliases": [
+      "BASQUINE VIII",
+      "巴斯金VIII",
+      "巴斯奎VIII"
+    ],
+    "sector": "SOL",
+    "biome": "Deciduous Autumn Forest",
+    "hazards": []
+  },
+  "273": {
+    "name": "阿尔德里奇湾",
+    "english_name": "ALDERIDGE COVE",
+    "aliases": [
+      "ALDERIDGE COVE",
+      "阿尔德里奇湾",
+      "阿得里治灣"
+    ],
+    "sector": "OMEGA",
+    "biome": "Deadlands",
+    "hazards": []
+  }
+}

@@ -1,0 +1,43 @@
+name: Checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  publication:
+    name: Publication and full history
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'python-dotenv>=1.1,<2'
+      - name: Install verified Gitleaks
+        shell: bash
+        run: |
+          set -euo pipefail
+          install_dir="$(mktemp -d)"
+          cd "$install_dir"
+          release=https://github.com/gitleaks/gitleaks/releases/download/v8.30.1
+          curl --fail --location --retry 3 "$release/gitleaks_8.30.1_linux_x64.tar.gz" -o gitleaks_8.30.1_linux_x64.tar.gz
+          curl --fail --location --retry 3 "$release/gitleaks_8.30.1_checksums.txt" -o checksums.txt
+          sha256sum --check --ignore-missing checksums.txt
+          tar -xzf gitleaks_8.30.1_linux_x64.tar.gz gitleaks
+          sudo install -m 755 gitleaks /usr/local/bin/gitleaks
+          gitleaks version
+      - name: Require clean files and reachable history
+        run: python scripts/check_publish.py --all --history
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e '.[dev]'
+      - run: sudo apt-get update -qq && sudo apt-get install -y fonts-noto-cjk fonts-noto-color-emoji
+      - run: python -m playwright install --with-deps chromium
+      - run: python -m ruff check src tests scripts
+      - run: python -m pytest -q --tb=short

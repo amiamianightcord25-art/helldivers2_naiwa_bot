@@ -1,0 +1,25 @@
+# 空白分发配置
+
+公开仓库保存功能代码、游戏资料、通用默认值与空白配置模板。运营者填写的内容放在下表的本地文件中；这些文件均由 `.gitignore` 排除。
+
+| 自定义内容 | 空白模板 | 本地运行文件 |
+| --- | --- | --- |
+| QQ 应用、运行参数、联系信息、路径 | `.env.example` | `.env` |
+| 更新日志版本、标题和正文 | `release_notice.example.json` | `data/release_notice.json` |
+| 自定义消息菜单 | `menu.example.json` | `data/menu.json` |
+| QQ 原生菜单、指令面板与归属标记 | `qq_native_ui.example.json` | `data/qq_native_ui.json` |
+| 主动推送开关、群列表、管理员与额度 | `group_push.example.json` | `data/group_push.json` |
+| 运营者二维码 | 不附带图片 | `data/qq_experience_qr.png` |
+| 部署目标、用户数据、订阅、记录和缓存 | 不附带运行数据 | `data/`、`logs/`、`.cache/` |
+
+模板的字符串值为空，集合为空；仅保留格式版本、关闭开关和通用合并模式。
+省略的原生面板归属标记使用通用 `hd2bot`，推送额度使用代码默认值；需要修改时只编辑本地运行文件。
+`.env.example` 中的空白运行参数使用代码默认值，QQ 应用凭据须由部署者自行填写。
+
+游戏名称、武器库、签到称号、功能文案和第三方来源链接属于通用功能资料，保留在仓库中。项目的 GitHub 地址用于开源说明。
+
+提交前运行 `python scripts/check_publish.py --all --history`。项目钩子检查运行文件、真实本地值、下载链接和示例是否仍为空白，再允许提交和推送。
+
+GitHub Checks 在每次 push 和 pull request 中强制运行同一命令并调用 Gitleaks；获取完整提交历史，任何失败都会令发布检查失败。历史范围为 HEAD、分支、标签和远端跟踪分支，包含旧版本中已从当前文件移除的内容；本机编辑器的私有检查点不属于发布引用。
+
+除凭据外，工作站盘符绝对路径和用户主目录路径也阻止发布。本机仍以 `.env` 与私有 JSON 中的真实值反查待发布文件及历史；CI 没有运营者配置时，执行通用路径、示例、下载链接与 Gitleaks 检查。仅提交一次删除不能消除旧提交中的记录。

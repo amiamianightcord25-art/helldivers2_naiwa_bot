@@ -1,0 +1,45 @@
+<style>
+  .vote-panel { margin-top: 26px; padding: 26px; background: #192126; border: 1px solid #39464d; }
+  .vote-heading { color: #f2df51; font-size: 29px; line-height: 1.5; }
+  .vote-subtitle { color: #c1cbd1; font-size: 21px; line-height: 1.7; margin-top: 9px; white-space: pre-wrap; }
+  .vote-figure { margin: 14px 0 0; }
+  .vote-svg { display: block; width: 100%; height: auto; }
+  .vote-total-label { fill: #bfcbd0; font-size: 23px; text-anchor: middle; }
+  .vote-total { fill: #fff7b9; font-size: 58px; font-weight: 800; text-anchor: middle; font-variant-numeric: tabular-nums; }
+  .vote-scale { color: #aab8c0; font-size: 18px; line-height: 1.6; margin-top: 6px; }
+  .vote-empty { color: #bac6cc; padding: 34px 0; font-size: 26px; text-align: center; }
+  .vote-legend { margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr); }
+  .vote-entry { display: grid; grid-template-columns: 20px minmax(0, 1fr) auto auto; gap: 15px; align-items: center; padding: 14px 0; border-top: 1px solid #34434a; }
+  .vote-swatch { width: 18px; height: 18px; border-radius: 50%; }
+  .vote-name { font-size: 25px; font-weight: 650; line-height: 1.45; }
+  .vote-count { font-size: 25px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .vote-percent { width: 108px; font-size: 24px; color: #c3cdd3; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+</style>
+{% for chart in card.vote_charts %}
+<section class="vote-panel" aria-label="{{ chart.title }}">
+  <h2 class="vote-heading">{{ chart.title }}</h2>
+  {% if chart.subtitle %}<div class="vote-subtitle">{{ chart.subtitle }}</div>{% endif %}
+  {% if chart.dots %}
+  <figure class="vote-figure">
+    <svg class="vote-svg" viewBox="0 0 900 455" role="img" aria-label="{{ chart.title }}，总票数 {{ '{:,}'.format(chart.total) }}">
+      {% for dot in chart.dots %}<circle cx="{{ dot.x }}" cy="{{ dot.y }}" r="{{ dot.radius }}" fill="{{ dot.color }}" />{% endfor %}
+      <text class="vote-total-label" x="450" y="345">迁移投票总数</text>
+      <text class="vote-total" x="450" y="408">{{ '{:,}'.format(chart.total) }}</text>
+    </svg>
+    <figcaption class="vote-scale">{{ chart.note }}</figcaption>
+  </figure>
+  {% else %}<div class="vote-empty">{{ chart.empty_message }}</div>{% endif %}
+  {% if chart.legend %}
+  <div class="vote-legend" aria-label="候选星球票数">
+    {% for entry in chart.legend %}
+    <div class="vote-entry">
+      <span class="vote-swatch" style="background: {{ entry.color }}"></span>
+      <span class="vote-name">{{ entry.name }}</span>
+      <span class="vote-count">{{ '{:,}'.format(entry.votes) }} 票</span>
+      <span class="vote-percent">{{ entry.percentage }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+{% endfor %}

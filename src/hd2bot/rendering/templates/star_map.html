@@ -1,0 +1,106 @@
+<style>
+  .starmap { margin-top: 25px; border: 1px solid #455056; background: #101a20; }
+  .starmap-heading { padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 18px; border-bottom: 1px solid #455056; }
+  .starmap-title { font-size: 20px; font-weight: 700; color: #f1df68; letter-spacing: 2px; }
+  .starmap-caption { font-size: 15px; line-height: 1.5; color: #b8c6cf; text-align: right; }
+  .starmap-svg { display: block; width: 100%; height: auto; background: radial-gradient(ellipse at 50% 50%, #1d2b32 0%, #101a20 58%, #0b141a 100%); }
+  .starmap-grid { stroke: #6c858d; stroke-width: 1; opacity: .14; }
+  .starmap-axis { fill: #82969c; font-size: 12px; font-variant-numeric: tabular-nums; letter-spacing: 2px; }
+  .starmap-orbit { fill: none; stroke: #81929a; stroke-width: 1; opacity: .13; }
+  .starmap-link { stroke: #94a7b1; stroke-width: 1.6; opacity: .44; }
+  .starmap-planet { color: #a8b3bc; }
+  .starmap-planet.Humans { color: #72caff; }
+  .starmap-planet.Terminids { color: #f1d254; }
+  .starmap-planet.Automatons { color: #ff7372; }
+  .starmap-planet.Illuminate { color: #c59bff; }
+  .starmap-planet.is-disabled { opacity: .43; }
+  .starmap-dot { fill: currentColor; stroke: #0d171e; stroke-width: 1.6; }
+  .starmap-planet.is-disabled .starmap-dot { fill: #101a20; stroke: currentColor; stroke-width: 1.7; }
+  .starmap-active { fill: none; stroke: #eff4f7; stroke-width: 2; }
+  .starmap-defense { fill: none; stroke: #ffad61; stroke-width: 2.5; }
+  .starmap-major { fill: #f1d254; fill-opacity: .08; stroke: #f1d254; stroke-width: 2; }
+  .starmap-focus { fill: none; stroke: #f8f9ee; stroke-width: 1.8; }
+  .starmap-marker-line { stroke: currentColor; stroke-width: 1.5; opacity: .8; }
+  .starmap-marker-bg { fill: #142129; stroke: currentColor; stroke-width: 1.3; }
+  .starmap-marker-text { fill: #f6f5e9; font-size: 20px; font-weight: 700; text-anchor: middle; dominant-baseline: central; font-variant-numeric: tabular-nums; }
+  .starmap-key { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 25px; padding: 17px 22px; border-top: 1px solid #34424b; }
+  .starmap-key + .starmap-key { padding-top: 14px; padding-bottom: 14px; background: #17222a; }
+  .starmap-key-item { display: inline-flex; align-items: center; gap: 8px; color: #d3dce0; font-size: 16px; line-height: 1.5; white-space: nowrap; }
+  .starmap-key-dot { width: 11px; height: 11px; display: inline-block; border-radius: 50%; background: var(--faction); }
+  .starmap-key-icon { display: inline-flex; align-items: center; justify-content: center; width: 23px; height: 23px; }
+  .starmap-key-ring { width: 17px; height: 17px; border: 2px solid #eff4f7; border-radius: 50%; }
+  .starmap-key-defense { border-color: #ffad61; }
+  .starmap-key-major { width: 15px; height: 15px; transform: rotate(45deg); border: 2px solid #f1d254; }
+  .starmap-key-disabled { width: 11px; height: 11px; border: 2px solid #82939d; border-radius: 50%; }
+  .starmap-key-line { width: 22px; height: 0; border-top: 2px solid #94a7b1; }
+  .starmap-note { color: #a8b8c1; font-size: 15px; line-height: 1.7; padding: 12px 22px 15px; border-top: 1px solid #34424b; }
+</style>
+<section class="starmap" aria-label="银河星图">
+  <div class="starmap-heading">
+    <span class="starmap-title">银河战区 · 星球分布</span>
+    <span class="starmap-caption">{% if card.star_map.focus_name %}定位：{{ card.star_map.focus_name }}{% else %}编号对应下方战区索引{% endif %}</span>
+  </div>
+  <svg class="starmap-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="starmap-description">
+    <title id="starmap-description">银河星图{% if card.star_map.focus_name %} · 定位 {{ card.star_map.focus_name }}{% endif %}。星球颜色表示控制阵营；补给线不代表可部署。</title>
+    <g aria-hidden="true">
+      {% for coordinate in range(100, 1000, 100) %}
+      <line class="starmap-grid" x1="{{ coordinate }}" y1="42" x2="{{ coordinate }}" y2="958" />
+      <line class="starmap-grid" x1="42" y1="{{ coordinate }}" x2="958" y2="{{ coordinate }}" />
+      <text class="starmap-axis" x="{{ coordinate }}" y="25" text-anchor="middle">{{ "%02d"|format(loop.index) }}</text>
+      <text class="starmap-axis" x="18" y="{{ coordinate + 4 }}" text-anchor="middle">{{ "%02d"|format(loop.index) }}</text>
+      {% endfor %}
+      <circle class="starmap-orbit" cx="500" cy="500" r="150" />
+      <circle class="starmap-orbit" cx="500" cy="500" r="300" />
+      <circle class="starmap-orbit" cx="500" cy="500" r="450" />
+      <path d="M 22 64 V 22 H 64 M 936 22 H 978 V 64 M 978 936 V 978 H 936 M 64 978 H 22 V 936" fill="none" stroke="#b9b074" stroke-width="2" opacity=".8" />
+    </g>
+    <g class="starmap-links">
+      {% for link in card.star_map.links %}
+      <line class="starmap-link" x1="{{ link.x1 }}" y1="{{ link.y1 }}" x2="{{ link.x2 }}" y2="{{ link.y2 }}" />
+      {% endfor %}
+    </g>
+    <g class="starmap-planets">
+      {% for planet in card.star_map.planets %}
+      <g class="starmap-planet {{ planet.faction }}{% if planet.disabled %} is-disabled{% endif %}" transform="translate({{ planet.x }}, {{ planet.y }})" data-planet-index="{{ planet.index }}">
+        <title>{{ planet.name }}</title>
+        {% if planet.major %}<path class="starmap-major" d="M 0 -20 L 20 0 L 0 20 L -20 0 Z" />{% endif %}
+        {% if planet.active %}<circle class="starmap-active" r="10" />{% endif %}
+        {% if planet.defense %}<circle class="starmap-defense" r="14" />{% endif %}
+        <circle class="starmap-dot" r="{{ 5.5 if planet.active or planet.focused or planet.marker else 3.7 }}" />
+        {% if planet.focused %}
+        <circle class="starmap-focus" r="25" />
+        <circle class="starmap-focus" r="29" stroke-dasharray="8 7" />
+        <path class="starmap-focus" d="M -38 0 H -22 M 22 0 H 38 M 0 -38 V -22 M 0 22 V 38" />
+        {% endif %}
+      </g>
+      {% endfor %}
+    </g>
+    <g class="starmap-markers">
+      {% for planet in card.star_map.planets if planet.marker %}
+      {% set label_width = 54 if planet.marker|length > 2 else 38 %}
+      {% set label_x = planet.marker_dx %}
+      {% set label_y = planet.marker_dy %}
+      <g class="starmap-planet {{ planet.faction }}" transform="translate({{ planet.x }}, {{ planet.y }})">
+        <path class="starmap-marker-line" d="M 0 0 L {{ label_x + label_width / 2 }} {{ label_y + 15.5 }}" />
+        <rect class="starmap-marker-bg" x="{{ label_x }}" y="{{ label_y }}" width="{{ label_width }}" height="31" rx="2" />
+        <text class="starmap-marker-text" x="{{ label_x + label_width / 2 }}" y="{{ label_y + 15.5 }}">{{ planet.marker }}</text>
+      </g>
+      {% endfor %}
+    </g>
+  </svg>
+  <div class="starmap-key">
+    <span class="starmap-key-item"><i class="starmap-key-dot" style="--faction: #72caff"></i>超级地球</span>
+    <span class="starmap-key-item"><i class="starmap-key-dot" style="--faction: #f1d254"></i>终结族</span>
+    <span class="starmap-key-item"><i class="starmap-key-dot" style="--faction: #ff7372"></i>机器人</span>
+    <span class="starmap-key-item"><i class="starmap-key-dot" style="--faction: #c59bff"></i>光能族</span>
+    <span class="starmap-key-item"><i class="starmap-key-dot" style="--faction: #a8b3bc"></i>未知阵营</span>
+  </div>
+  <div class="starmap-key">
+    <span class="starmap-key-item"><i class="starmap-key-icon"><i class="starmap-key-ring"></i></i>活跃战役</span>
+    <span class="starmap-key-item"><i class="starmap-key-icon"><i class="starmap-key-ring starmap-key-defense"></i></i>防守</span>
+    <span class="starmap-key-item"><i class="starmap-key-icon"><i class="starmap-key-major"></i></i>主要指令</span>
+    <span class="starmap-key-item"><i class="starmap-key-icon"><i class="starmap-key-disabled"></i></i>不可部署</span>
+    <span class="starmap-key-item"><i class="starmap-key-icon"><i class="starmap-key-line"></i></i>补给线</span>
+  </div>
+  <div class="starmap-note">线条仅表示星球连接，不代表进攻方向或可部署。星图展示当前数据快照；编号用于查阅下方星球详情。</div>
+</section>

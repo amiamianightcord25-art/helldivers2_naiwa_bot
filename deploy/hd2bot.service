@@ -1,0 +1,42 @@
+[Unit]
+Description=Helldivers 2 QQ bot
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=180
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=hd2bot
+Group=hd2bot
+WorkingDirectory=/opt/hd2bot
+EnvironmentFile=/etc/hd2bot/bot.env
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONUTF8=1
+Environment=TZ=Asia/Shanghai
+Environment=PLAYWRIGHT_BROWSERS_PATH=/var/cache/hd2bot/ms-playwright
+Environment=XDG_CACHE_HOME=/var/cache/hd2bot
+ExecStart=/opt/hd2bot/.venv/bin/python -u /opt/hd2bot/run.py
+ExecStop=/opt/hd2bot/.venv/bin/python /opt/hd2bot/scripts/bot_control.py stop --timeout 35
+Restart=on-failure
+RestartSec=8
+TimeoutStopSec=45
+KillMode=control-group
+MemoryHigh=1100M
+MemoryMax=1400M
+TasksMax=256
+CPUQuota=150%
+Nice=5
+UMask=0077
+LimitCORE=0
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/var/lib/hd2bot /var/cache/hd2bot /var/log/hd2bot
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

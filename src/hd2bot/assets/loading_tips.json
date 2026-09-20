@@ -1,0 +1,597 @@
+{
+  "schema": 1,
+  "collected_at": "2026-09-19",
+  "sources": [
+    {
+      "name": "Helldivers Wiki — Training Manual Tips",
+      "url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "retrieved_at": "2026-09-19",
+      "revision": "108731"
+    }
+  ],
+  "attribution": "Game text: HELLDIVERS 2 / Arrowhead Game Studios / Sony Interactive Entertainment; transcription and grouping: Helldivers Wiki contributors. Chinese reference translations prepared for this bot.",
+  "license": "Wiki transcription and these reference translations: CC BY-NC-SA 4.0; original game text belongs to Arrowhead Game Studios / Sony Interactive Entertainment.",
+  "items": [
+    {
+      "id": "lore-01",
+      "text": "管理式民主是先进文明的基石。",
+      "english": "Managed Democracy is a cornerstone of advanced civilization.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-02",
+      "text": "超级地球有许多节日，其中最重要的是 10 月 26 日——自由日！",
+      "english": "Super Earth has many holidays, but the most important is October 26th-Liberty Day!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-03",
+      "text": "放心，治疗针完全没有成瘾性！＊ ＊本研究由 Permacura 资助。Permacura：把生命交给我们。",
+      "english": "Don't worry—stims have zero addictive properties!* *Study paid for by Permacura. Permacura: put your life in our hands.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-04",
+      "text": "如果敌人试图进行外交接触，就向他们开火。我们绝不能相信他们的谎言。",
+      "english": "If an enemy ever attempts to engage in diplomacy, SHOOT THEM. We mustn't believe their lies.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-05",
+      "text": "科学部负责推动科学不断进步，让我们在对敌人的道德优势之外，再添科技优势。",
+      "english": "The Ministry of Science is responsible for continuous scientific progress, augmenting our moral superiority over our enemies with technological superiority.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-06",
+      "text": "在进行任何可能产生孩子的行为之前，记得填写 C-01 许可证。",
+      "english": "Remember to fill in your C-01 permit before any act that could result in a child.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-07",
+      "text": "繁荣部管理超级地球的经济，确保资源源源不断地流向最值得拥有它们的人。",
+      "english": "The Ministry of Prosperity manages Super Earth's economy and ensure a steady flow of resources to the most deserving.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-08",
+      "text": "人类部通过管理教育、医疗、社会评级与基因，维持选民的健康和生产力。",
+      "english": "The Ministry of Humanity maintains healthy, productive voters by managing education, healthcare, social grading and gene management.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-09",
+      "text": "超级地球建议每次任务至少花 2.4 秒欣赏风景。快乐的绝地潜兵也是致命的绝地潜兵。",
+      "english": "Super Earth recommends spending at least 2.4 seconds per mission enjoying the scenery. A happy Helldiver is a deadly Helldiver.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-10",
+      "text": "每位公民对战争都同等重要，但绝地潜兵最重要。",
+      "english": "Every citizen is equally important to the war effort, but Helldivers are the most important.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-11",
+      "text": "国防部负责捍卫自由，抵御一切敌人：人类与非人类、已经出现的与潜在的敌人。",
+      "english": "The Ministry of Defense is responsible for the defense of Liberty against all enemies, human and non-human, realized and potential.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-12",
+      "text": "团结部保护我们免受越轨行为、危险思想表达等内部威胁，确保全人类团结一致。",
+      "english": "The Ministry of Unity ensures that all of mankind is united as one by protecting us from internal threats, such as deviant behavior and expression of dangerous ideas.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-13",
+      "text": "穿行银河的绝地潜兵可能发现古代遗迹和其他奇物。记住：只有叛徒才会对外星遗物感到好奇！",
+      "english": "Helldivers traveling the galaxy might come across ancient ruins and other curiosities. Just remember: Only a traitor is curious about alien artifacts!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-14",
+      "text": "放心，即使任务目标失败，你也不会被送往自由营。这只是异见分子散布的谣言。",
+      "english": "Don't worry, if you fail an objective, you will NOT be sent to a freedom camp. This is merely a dissident rumor.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-15",
+      "text": "真理部负责让所有公民充分知情，并在思想上做好抵御敌人卑劣宣传的准备。",
+      "english": "The Ministry of Truth is responsible for keeping all citizens well-informed and mentally equipped to withstand our enemies' vile propaganda.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-16",
+      "text": "如果发现队友同情敌人，请向民主官报告。思想犯罪会致人死亡！",
+      "english": "If you notice a squadmate sympathizing with an enemy, report them to your Democracy Officer. Thoughtcrimes kill!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-17",
+      "text": "坚持每日脱敏训练，确保面对敌人的暴行时仍能镇定自若。",
+      "english": "Practice your daily desensitization exercises to ensure you remain unfazed by enemy atrocities.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "lore-18",
+      "text": "扩张部不懈扩大自由的疆域，并获取社会繁荣所需的重要资源。",
+      "english": "The Ministry of Expansion tirelessly works to expand the reach of Freedom and secures vital resources for our society to thrive.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-01",
+      "text": "谨慎选择装备，确保小队拥有所需的一切资源。民主就靠你们了！",
+      "english": "Choose your loadout carefully to ensure your squad has all the resources it needs. Democracy depends on it!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-02",
+      "text": "任务计时结束后，超级驱逐舰会离开低空轨道，你将无法再呼叫战略配备和增援。",
+      "english": "When the mission timer runs out, the Super Destroyer will leave low orbit and you'll lose access to stratagems and reinforcements.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-03",
+      "text": "如果敌人源源不断，就找到它们的来源并倾泻火力。大型虫巢？摧毁！机器人工厂？摧毁！",
+      "english": "If the enemies just keep coming, find out where they're coming from and unleash hell. Big hive? Destroy! Bot factory? Destroy!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-04",
+      "text": "别单打独斗——加入小队，把解放的威力发挥到极致！",
+      "english": "Don't go it alone—join a squad on order to unleash maximum liberation!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-05",
+      "text": "独自执行任务，迫切希望有人陪你一起解放？使用 SOS 信标呼叫另一位绝地潜兵。",
+      "english": "On a mission alone and dying to have someone liberating by your side? Use an SOS beacon to call in a fellow Helldiver.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-06",
+      "text": "稀有样本只会出现在更有挑战性的任务中。",
+      "english": "Rare Samples only available on more challenging missions.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-07",
+      "text": "如果队友在任务中阵亡，记得捡起他们掉落的样本。哀悼可以留到以后！",
+      "english": "If a squadmate dies during a mission, make sure you pick up their dropped samples. There will be time for mourning later!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-08",
+      "text": "每个阵营都会带来不同的挑战。调整装备，尝试新战术！",
+      "english": "Each faction presents unique challenges. Mix up your gear and try new tactics!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-09",
+      "text": "如果第一次没成功，就再次空降。再来一次，再来一次，再来一次，再来一次，再来一次，再来一次，再来一次，再来一次，再来一次，再来一次，再来一次，再来一次，再来一次，再来一次，再来一次……",
+      "english": "If at first you don't succeed, dive, dive again. And again. And again. And again. And again. And again. And again. And again. And again. And again. And again. And again. And again. And again. And again...",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-10",
+      "text": "绝地潜兵训练计划无疑完美无缺，不过你随时可以从游戏菜单重新接受训练。",
+      "english": "While the Helldiver training program is undeniably infallible, you can always repeat your training from the game menu.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-11",
+      "text": "超级驱逐舰在低空轨道停留的时间有限——注意任务计时！",
+      "english": "The Super Destroyer can only stay in low orbit for a limited time—watch that mission clock!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-12",
+      "text": "每次任务可用的增援数量有限。用完以后，增援会按计时缓慢补充。",
+      "english": "You have a limited amounts of reinforcements available in a mission. If you run out they will be replenished slowly on a timer.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-13",
+      "text": "任务难度部分取决于区域内的敌人类型。务必携带合适的武器！",
+      "english": "Mission difficulty is determined in part by the types of enemy units in the area. Make sure you bring the appropriate weaponry!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-14",
+      "text": "护甲不只是装饰——重甲能让你更耐打，但会降低速度并影响耐力。",
+      "english": "Armor isn't just for looks—heavier armor makes you more resilient to attacks but slows you down and affects your stamina.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-15",
+      "text": "银河战争需要共同努力。只有齐心协力，才能确保星球不落入敌手。",
+      "english": "The Galactic War is a united effort. Only by working together can we ensure planets don't fall to the enemy.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-16",
+      "text": "任务区域中有许多尚未探索的兴趣点。去看看——你永远不知道会发现什么。",
+      "english": "Missions are filled with unexplored points of interest. Check them out—you never know what you might find.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-17",
+      "text": "对现在的自己不满意？在自定义舱室更换外观和声音。就这么简单！",
+      "english": "Unhappy with who you are? Change your appearance and voice in the customization chamber. It's that easy!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-18",
+      "text": "务必拾起阵亡队友的样本容器。它们对我们共同的科学进步至关重要！",
+      "english": "Make sure to pick up your fallen squadmates' sample containers. They're critical for our collective scientific progress!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-19",
+      "text": "任务越有挑战性，奖励就越丰厚！",
+      "english": "More challenging missions yield greater rewards!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-20",
+      "text": "想展示你对资本主义的坚定支持？把奖章花在战争债券上吧！",
+      "english": "Want to show off how firmly you support capitalism? Spend medals on a Warbond!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-21",
+      "text": "发现某颗星球即将落入敌人控制？召集其他绝地潜兵，组织防守。每一次任务都很重要！",
+      "english": "See a planet that's on the brink of falling under enemy control? Rally your fellow Helldivers and mount a defense. Every mission counts!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-22",
+      "text": "收集奖章来推进战争债券。不过不用着急——战争债券随时都能完成。",
+      "english": "Collect medals to progress your Warbond. No rush though—Warbonds can be completed at any time.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-23",
+      "text": "小心外星风暴。超级地球科学家已正式将其中许多归类为危险现象，而且十分诡异。",
+      "english": "Watch out for alien storms. Super Earth scientists have officially classified many of them as dangerous. And freaky.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-24",
+      "text": "在地图上放置标记，帮助小队辨认方向。",
+      "english": "Place markers on the map to help your squad navigate.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-25",
+      "text": "选择任务时可以看到星球的昼夜分界，因此你能挑选适合自己的任务！",
+      "english": "Day and night sides of a planet are visible during mission selection, allowing you to choose the mission that's right for you!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "gameplay-26",
+      "text": "光线不足和恶劣天气会降低视野。（不过别怕——敌人的视野也会受到影响。）",
+      "english": "Low light and poor weather reduce your vision. (But never fear—they also reduce the vision of our enemies)",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "stratagems-01",
+      "text": "每种战略配备都有优点和缺点。根据任务和小队配置，选择最合适的战略配备组合。",
+      "english": "All stratagems have their strengths and weaknesses. Choose your Stratagem loadout to best fit the mission and your squad composition.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "stratagems-02",
+      "text": "飞鹰是快速响应的攻击机，其呼叫时间远短于轨道火力支援。",
+      "english": "Eagles are fast-response strike craft, with much shorter call-in times than Orbital fire support.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "stratagems-03",
+      "text": "出于预算原因，地狱火炸弹需要手动启动。但除非你想登上烈士墙，否则启动后别留在附近。",
+      "english": "For budgetary reasons, Hellbombs require manual arming. But don't stick around unless you're looking for a spot on the wall of martyrs.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "stratagems-04",
+      "text": "记住，对付装甲敌人需要重型武器。根据所选难度携带合适的装备。",
+      "english": "Remember that armored enemies require heavy weapons. Bring appropriate equipment for your selected difficulty.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "stratagems-05",
+      "text": "越靠近地图边缘，轨道轰炸的入射角就越陡。物理学！",
+      "english": "The closer you are to the edge of the map, the steeper the angle of incoming orbital bombardments. Physics!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "stratagems-06",
+      "text": "在战况平静时使用“飞鹰重新装填”战略配备，确保需要时有飞鹰打击可用。",
+      "english": "Use the Eagle Rearm stratagem during calmer periods to ensure you have those Eagle Strikes available when you needs them.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-01",
+      "text": "在虫子靠近前消灭它们。记住，没有什么比子弹更能保护你的私人空间。",
+      "english": "Kill bugs before they get close. Remember, nothing protects your personal space better than bullets.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-02",
+      "text": "收拾虫子没有唯一正确的方法。尝试不同战术，看看哪种管用！",
+      "english": "There's no one right way to skin a bug. Experiment with different tactics and see what works!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-03",
+      "text": "总是打不中目标？使用第一人称视角进行远距离射击。",
+      "english": "Tired of missing your target? Use First Person View (FPV) to make long-distance shots.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-04",
+      "text": "复杂地形会妨碍移动。建议避开积雪、泥地、水域、灌木和熔岩。完整列表请见手册 D.198-2 节。",
+      "english": "Difficult terrain inhibits your movement. Best practices recommend avoiding Snow, Mud, Water, Shrubberies, and Lava. For a complete list, see Manual Section D.198-2.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-05",
+      "text": "友军火力一点也不友好。",
+      "english": "Friendly Fire isn't.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-06",
+      "text": "姿态会显著影响精度。超级地球武装部队手册按精度从低到高排列如下：移动 ＜ 站立 ＜ 蹲伏 ＜ 卧倒。",
+      "english": "Your stance has a significant impact on accuracy. The S.E.A.F. manual lists the following stances in order of least to most accurate: Moving < Standing < Crouching < Prone.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-07",
+      "text": "万不得已时，可以用近战攻击抵挡敌人。记住：宁可死去，也不要懦弱！",
+      "english": "As a last resort, you can use melee attacks to fend off enemies. Remember: death is better than cowardice!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-08",
+      "text": "多数武器有不同的射击模式或功能——长按装填键即可查看。",
+      "english": "Most weapons have different fire modes or functions—hold Reload to access them.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-09",
+      "text": "正面射击更有效——斜着打可能让子弹滑开，甚至跳弹击中队友。",
+      "english": "It pays to be a straight shooter—angled fire might glance off your target or even ricochet into your squadmates.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-10",
+      "text": "手臂受伤会削弱你控制后坐力的能力，并让瞄准更加晃动。",
+      "english": "Arm injuries reduce your ability to handle recoil and will cause your aim to sway more.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-11",
+      "text": "装填时会丢弃弹匣中剩余的子弹。",
+      "english": "Reloading discards the remaining rounds in your magazine.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-12",
+      "text": "耐力耗尽时，你的冲刺速度会降低，射击精度也会变差。",
+      "english": "When your stamina is depleted, your sprint speed is slower and you accuracy is worse.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-13",
+      "text": "使用治疗针治疗伤势并恢复耐力；紧急时也可以为其他绝地潜兵使用！",
+      "english": "Use Stims to heal your injuries and replenish your stamina—or that of your fellow Helldivers, in a pinch!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-14",
+      "text": "多数敌人既有弱点，也有装甲部位。超级地球武装部队训练手册建议瞄准弱点。",
+      "english": "Most enemies have both weak spots and armored spots. The S.E.A.F. training manual recommends aiming for the weak spots.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-15",
+      "text": "卧倒能降低爆炸对你的伤害。危险迫近时，赶快飞扑！",
+      "english": "Being prone makes you less susceptible to explosions. When in imminent danger, dive!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-16",
+      "text": "你可以捡起已经启动的手榴弹，在它爆炸前扔出去。试试吧，很有意思！",
+      "english": "You can pick up active grenades and toss them away before they explode. Give it a try, it's fun!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-17",
+      "text": "手枪、冲锋枪等武器可以单手使用——另一只手需要搬运物品时再合适不过了。",
+      "english": "Weapons like pistols and submachine guns can be used with one hand—perfect for when you need to carry object in the other hand.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-18",
+      "text": "投掷前握住手榴弹一会儿，让引信提前计时。算准时机投掷，让它在空中爆炸！（注意：等得太久可能导致意外死亡。）",
+      "english": "Hold a grenade before throwing to \"cook\" it. Time your throw for an air-burst detonation! (Note: waiting too long may lead to unintended death.)",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-19",
+      "text": "飞扑到地面可能救你一命，但也会让你更容易被近战敌人击中。",
+      "english": "Diving to the group can be a life-saver, but it also makes you an easy target for melee units.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-20",
+      "text": "面对机器人时，记住三个 C：掩体（Cover）、勇气（Courage），还有更多掩体（Cover）。",
+      "english": "When you're up against the bots, remember the 3 Cs: Cover, Courage and more Cover.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-21",
+      "text": "十名医生中有九名同意：胸部伤口若不处理，就会让你失血而死。",
+      "english": "Nine out of ten doctors agree that a wound to the chest will make you bleed out if unattended.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-22",
+      "text": "空投舱具备基本转向能力。试着直接落到敌人头上！",
+      "english": "Hellpods have basic steering capabilities. Try to drop in on your enemies!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-23",
+      "text": "机器人配备了超反应协议，因此容易受到火力压制。你向它们开火越多，它们打得就越不准。",
+      "english": "The Automatons are equipped with hyper reactive protocols, making them susceptible to suppressive fire. The more you shoot at them, the less accurate they'll be.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "combat-24",
+      "text": "长按装填键查看弹药。",
+      "english": "Check your Ammo by holding the Reload button.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "general-01",
+      "text": "别慌。",
+      "english": "Don't panic.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "general-02",
+      "text": "喝酒不开车。",
+      "english": "Don't drink and drive.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "general-03",
+      "text": "负责任地空降。",
+      "english": "Dive responsibly.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "general-04",
+      "text": "拿不准时，不要思考——只要大喊“为了民主！”然后一头冲向问题。",
+      "english": "When in doubt, don't think—simply shout \"For Democracy!\" and charge head-first into your problems.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "general-05",
+      "text": "别忘了休息！……当然，前提是你想以懦夫的身份被人记住。",
+      "english": "Don't forget to take breaks! … That is, if you want to be remembered as a coward.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "general-06",
+      "text": "记住：自由！",
+      "english": "Remember: Freedom!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "general-07",
+      "text": "别死！",
+      "english": "Don't die!",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "general-08",
+      "text": "留意这些提示。它们经过精心调整，以确保你成功。",
+      "english": "Pay attention to these tips. They've been carefully calibrated to ensure your success.",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    },
+    {
+      "id": "general-09",
+      "text": "你知道这些过场画面会显示小贴士吗？",
+      "english": "Did you know tips are shown during these transition sequences?",
+      "source_url": "https://helldivers.wiki.gg/wiki/Training_Manual_Tips?oldid=108731",
+      "translation_status": "reference_translation"
+    }
+  ]
+}

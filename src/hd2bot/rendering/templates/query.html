@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; script-src 'none'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>{{ card.title }}</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #0c0f12; }
+    body { font-family: "Noto Sans CJK SC", "Microsoft YaHei", "Noto Sans", "Noto Color Emoji", "Segoe UI Emoji", sans-serif; }
+    #query-card {
+      width: {{ width }}px;
+      padding: 38px 38px 25px;
+      color: #f3f4f4;
+      background:
+        linear-gradient(125deg, transparent 69%, rgba(246,222,51,.035) 69%, rgba(246,222,51,.035) 72%, transparent 72%),
+        radial-gradient(ellipse at 95% 0%, #303021 0%, transparent 45%),
+        #101418;
+      border-top: 8px solid #f0dc42;
+      overflow-wrap: break-word;
+      word-break: normal;
+      line-break: strict;
+    }
+    .masthead { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .eyebrow { font-size: 17px; letter-spacing: 3px; font-weight: 700; color: #f0dc42; }
+    .masthead-right { color: #a4aaaf; font-size: 14px; letter-spacing: 2px; text-align: right; }
+    .hero { padding: 27px 0 26px; border-bottom: 1px solid #424644; }
+    .hero.with-image { display: grid; grid-template-columns: minmax(0, 1fr) 43%; gap: 28px; align-items: center; }
+    .equipment-art { margin: 0; padding: 18px; background: #1d2328; border: 1px solid #3d474e; }
+    .equipment-art img { display: block; width: 100%; height: 220px; object-fit: contain; }
+    .equipment-art figcaption { margin-top: 12px; font-size: 13px; line-height: 1.6; color: #aeb8bf; overflow-wrap: anywhere; }
+    h1 { font-size: 46px; line-height: 1.3; font-weight: 800; letter-spacing: 1px; margin: 0; }
+    .subtitle { color: #c0c6c9; font-size: 20px; line-height: 1.65; margin: 10px 0 0; white-space: pre-wrap; }
+    .metrics { display: grid; grid-template-columns: repeat({{ metric_columns }}, minmax(0, 1fr)); gap: 13px; margin-top: 23px; }
+    .metric { padding: 19px 19px 17px; background: #23282c; border-left: 3px solid #dcc73c; }
+    .metric-label { font-size: 17px; line-height: 1.5; color: #bfc5c9; }
+    .metric-value { margin-top: 8px; color: #f4df49; font-size: 35px; font-weight: 800; line-height: 1.2; font-variant-numeric: tabular-nums; }
+    .metric-hint { margin-top: 9px; font-size: 14px; color: #c0c6c9; line-height: 1.5; white-space: pre-wrap; }
+    .notices { margin: 22px 0 0; padding: 14px 18px; background: #34311e; border: 1px solid #6d6331; color: #f0de8d; }
+    .notice-title { font-size: 14px; font-weight: 700; letter-spacing: 2px; margin-bottom: 5px; }
+    .notice { font-size: 16px; line-height: 1.65; white-space: pre-wrap; }
+    .sections { display: grid; grid-template-columns: repeat({{ columns }}, minmax(0, 1fr)); gap: 15px; align-items: start; margin-top: 25px; }
+    .section { min-width: 0; background: #1d2328; border: 1px solid #353d43; }
+    .section.full-width { grid-column: 1 / -1; }
+    .section-heading { padding: 15px 17px; background: #292f32; border-bottom: 1px solid #404746; display: flex; align-items: baseline; gap: 11px; }
+    .section-index { flex-shrink: 0; font-size: 13px; color: #dec93e; font-weight: 800; letter-spacing: 1px; }
+    h2 { margin: 0; color: #f2f3ed; font-size: 21px; line-height: 1.4; font-weight: 700; }
+    .row { margin: 0 16px; padding: 15px 0; border-bottom: 1px solid #353c42; }
+    .row:last-child { border-bottom: 0; }
+    .row-main { display: flex; justify-content: space-between; gap: 15px; align-items: baseline; }
+    .row-label { min-width: 0; font-size: 17px; line-height: 1.55; color: #bdc5ca; flex: 1 1 auto; }
+    .row-value { min-width: 0; max-width: 100%; font-size: 19px; line-height: 1.5; font-weight: 700; color: #f4f4ec; text-align: right; flex: 0 0 auto; font-variant-numeric: tabular-nums; white-space: pre-wrap; }
+    .row.stacked .row-main { display: block; }
+    .row.stacked .row-label { display: block; }
+    .row.stacked .row-value { display: block; margin-top: 6px; text-align: left; }
+    .text-unit { white-space: nowrap; }
+    .row-detail { margin-top: 6px; color: #aeb8bf; font-size: 14px; line-height: 1.6; white-space: pre-wrap; }
+    .row.prose .row-main { display: block; }
+    .row.prose .row-label { display: block; font-size: 14px; color: #d9ce89; margin-bottom: 5px; }
+    .row.prose .row-value { display: block; text-align: left; font-size: 17px; line-height: 1.7; font-weight: 400; }
+    .progress { margin-top: 10px; height: 5px; width: 100%; background: #424a4c; }
+    .progress-fill { height: 100%; background: #e3d143; }
+    .catalog-gallery { display: grid; grid-template-columns: repeat({{ 2 if width >= 950 else 1 }}, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+    .catalog-tile { display: grid; grid-template-columns: 126px minmax(0, 1fr); gap: 18px; align-items: center; padding: 16px; background: #1b252c; border: 1px solid #3b4851; }
+    .catalog-art { width: 126px; height: 126px; object-fit: contain; }
+    .catalog-missing { display:flex; align-items:center; justify-content:center; color:#aeb8be; font-size:16px; }
+    .catalog-number { color: #f0dc42; font-size: 18px; font-weight: 700; margin-bottom: 7px; }
+    .catalog-name { font-size: 21px; font-weight: 700; line-height: 1.5; }
+    .catalog-detail { color: #aeb8be; font-size: 15px; line-height: 1.5; margin-top: 6px; }
+    .footer { display: flex; justify-content: space-between; align-items: flex-end; gap: 25px; border-top: 1px solid #3e4548; margin-top: 26px; padding-top: 16px; }
+    .footer-notes { min-width: 0; flex: 1; font-size: 14px; line-height: 1.75; color: #aeb8be; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .footer-brand { flex: 0 0 auto; text-align: center; margin: 0; }
+    .experience-qr { display: block; width: {{ qr_size }}px; height: {{ qr_size }}px; padding: 12px; background: #fff; border-radius: 4px; object-fit: contain; }
+    .experience-caption { margin-top: 8px; color: #f0dc42; font-size: 17px; font-weight: 600; line-height: 1.6; white-space: nowrap; }
+  </style>
+</head>
+<body>
+  {% macro readable(value) -%}
+    {%- for text, together in value|text_parts -%}
+      {%- if together -%}<span class="text-unit">{{ text }}</span>{%- else -%}{{ text }}{%- endif -%}
+    {%- endfor -%}
+  {%- endmacro %}
+  <main id="query-card">
+    <div class="masthead">
+      <div class="eyebrow">{{ card.eyebrow }}</div>
+      <div class="masthead-right">超级地球 · 战情档案</div>
+    </div>
+    <header class="hero{% if card.image_data %} with-image{% endif %}">
+      <div>
+        <h1>{{ card.title }}</h1>
+        {% if card.subtitle %}<p class="subtitle">{{ card.subtitle }}</p>{% endif %}
+      </div>
+      {% if card.image_data %}
+      <figure class="equipment-art">
+        <img src="{{ card.image_data }}" alt="{{ card.title }}" />
+        {% if card.image_caption %}<figcaption>{{ card.image_caption }}</figcaption>{% endif %}
+      </figure>
+      {% endif %}
+    </header>
+    {% if card.metrics %}
+    <div class="metrics">
+      {% for metric in card.metrics %}
+      <div class="metric">
+        <div class="metric-label">{{ metric.label }}</div>
+        <div class="metric-value">{{ metric.value }}</div>
+        {% if metric.hint %}<div class="metric-hint">{{ metric.hint }}</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if card.notices %}
+    <aside class="notices">
+      <div class="notice-title">数据提示</div>
+      {% for notice in card.notices %}<div class="notice">{{ notice }}</div>{% endfor %}
+    </aside>
+    {% endif %}
+    {% if card.gallery %}
+    <section class="catalog-gallery" aria-label="装饰候选列表">
+      {% for tile in card.gallery %}
+      <article class="catalog-tile">
+        {% if tile.image_data %}<img class="catalog-art" src="{{ tile.image_data }}" alt="{{ tile.name }}" />
+        {% else %}<div class="catalog-art catalog-missing">暂无示意图</div>{% endif %}
+        <div><div class="catalog-number">{{ tile.number }}.</div><div class="catalog-name">{{ tile.name }}</div><div class="catalog-detail">{{ tile.detail }}</div></div>
+      </article>
+      {% endfor %}
+    </section>
+    {% endif %}
+    {% if card.star_map %}{% include "star_map.html" %}{% endif %}
+    {% if card.vote_charts %}{% include "vote_charts.html" %}{% endif %}
+    {% if card.sections %}
+    <div class="sections">
+      {% for section in card.sections %}
+      <section class="section{% if section.full_width %} full-width{% endif %}">
+        <div class="section-heading"><span class="section-index">{{ "%02d"|format(loop.index) }}</span><h2>{{ section.title }}</h2></div>
+        {% for row in section.rows %}
+        <div class="row{% if row.value|length > 40 or '\n' in row.value or not row.label %} prose{% endif %}">
+          <div class="row-main"><span class="row-label">{{ readable(row.label) }}</span><span class="row-value">{{ readable(row.value) }}</span></div>
+          {% if row.detail %}<div class="row-detail">{{ readable(row.detail) }}</div>{% endif %}
+          {% if row.progress is not none %}<div class="progress"><div class="progress-fill" style="width: {{ row.progress|progress }}%"></div></div>{% endif %}
+        </div>
+        {% endfor %}
+      </section>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <footer class="footer">
+      <div class="footer-notes">{% for note in card.footer %}<div>{{ note }}</div>{% endfor %}</div>
+      {% if qq_qr_data %}<figure class="footer-brand">
+        <img class="experience-qr" src="{{ qq_qr_data }}" alt="QQ 机器人体验二维码" />
+        <figcaption class="experience-caption">QQ扫一扫体验</figcaption>
+      </figure>{% endif %}
+    </footer>
+  </main>
+</body>
+</html>

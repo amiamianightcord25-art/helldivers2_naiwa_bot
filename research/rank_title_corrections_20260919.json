@@ -1,0 +1,131 @@
+{
+  "verified_at": "2026-09-19",
+  "changed_count": 21,
+  "changes": [
+    {
+      "level": 1,
+      "before": "新兵",
+      "after": "军校生"
+    },
+    {
+      "level": 5,
+      "before": "太空新兵",
+      "after": "太空军校生"
+    },
+    {
+      "level": 20,
+      "before": "首席军士长",
+      "after": "军督"
+    },
+    {
+      "level": 25,
+      "before": "太空首席军士长",
+      "after": "太空军督"
+    },
+    {
+      "level": 30,
+      "before": "死亡队长",
+      "after": "死神少校"
+    },
+    {
+      "level": 40,
+      "before": "星际元帅",
+      "after": "星级元帅"
+    },
+    {
+      "level": 70,
+      "before": "尊崇上将",
+      "after": "承敬上将"
+    },
+    {
+      "level": 80,
+      "before": "指挥官",
+      "after": "上尉"
+    },
+    {
+      "level": 90,
+      "before": "银河指挥官",
+      "after": "星系指挥官"
+    },
+    {
+      "level": 100,
+      "before": "地狱指挥官",
+      "after": "地狱上尉"
+    },
+    {
+      "level": 190,
+      "before": "雄鹰级游骑兵",
+      "after": "飞鹰级游骑兵"
+    },
+    {
+      "level": 210,
+      "before": "潜兵大师",
+      "after": "潜兵长"
+    },
+    {
+      "level": 220,
+      "before": "一级潜兵大师",
+      "after": "一等潜兵长"
+    },
+    {
+      "level": 230,
+      "before": "潜兵大师长",
+      "after": "潜兵长少校"
+    },
+    {
+      "level": 240,
+      "before": "指挥潜兵大师长",
+      "after": "潜兵长少校指挥官"
+    },
+    {
+      "level": 250,
+      "before": "资深潜兵大师",
+      "after": "大师潜兵长"
+    },
+    {
+      "level": 260,
+      "before": "欧米伽资深潜兵大师长",
+      "after": "终极大师潜兵长少校"
+    },
+    {
+      "level": 270,
+      "before": "最高军衔",
+      "after": "最高等级"
+    },
+    {
+      "level": 280,
+      "before": "无限最高军衔",
+      "after": "无限最高等级"
+    },
+    {
+      "level": 290,
+      "before": "无限最高军衔加一",
+      "after": "无限最高等级+1"
+    },
+    {
+      "level": 300,
+      "before": "三百级军衔",
+      "after": "300级"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bilibili.com/video/BV1ZZ421778v/",
+      "published_at": "2024-05-05",
+      "levels": "1–150",
+      "video_resolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "url": "https://www.bilibili.com/video/BV1Gog56oExU/",
+      "published_at": "2026-08-12",
+      "levels": "160–300",
+      "video_resolution": [
+        1920,
+        1080
+      ]
+    }
+  ]
+}
