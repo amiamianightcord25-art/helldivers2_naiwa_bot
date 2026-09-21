@@ -4,7 +4,7 @@ import json
 import logging
 from pathlib import Path
 
-from hd2bot.commands.parser import parse_command
+from hd2bot.commands.parser import DISABLED_COMMANDS, parse_command
 from hd2bot.hd2.errors import CommandError
 from hd2bot.presentation import ChatContext, CommandButton, CommandReply
 from hd2bot.project_info import OPEN_SOURCE_BRIEF
@@ -55,6 +55,8 @@ class MenuService:
                         parsed = parse_command(command)
                     except CommandError as exc:
                         raise ValueError("unknown menu command") from exc
+                    if parsed.name in DISABLED_COMMANDS:
+                        raise ValueError("disabled menu command")
                     if parsed.name == "菜单" and parsed.argument not in {"", *pages}:
                         raise ValueError("unknown menu page")
         return pages

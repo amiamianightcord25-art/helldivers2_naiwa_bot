@@ -8,7 +8,6 @@
 | 更新日志版本、标题和正文 | `release_notice.example.json` | `data/release_notice.json` |
 | 自定义消息菜单 | `menu.example.json` | `data/menu.json` |
 | QQ 原生菜单、指令面板与归属标记 | `qq_native_ui.example.json` | `data/qq_native_ui.json` |
-| 主动推送开关、群列表、管理员与额度 | `group_push.example.json` | `data/group_push.json` |
 | 运营者二维码 | 不附带图片 | `data/qq_experience_qr.png` |
 | 部署目标、用户数据、订阅、记录和缓存 | 不附带运行数据 | `data/`、`logs/`、`.cache/` |
 

@@ -13,6 +13,14 @@ COMMANDS = frozenset({"战况", "主线", "星球", "进攻", "防守", "玩家"
 COMMANDS |= {"下载助手", "获取验证码", "同步帮助", "自我介绍", "推送设置", "开启推送", "暂停推送", "恢复推送", "绑定", "解绑", "获取战绩", "分享战绩", "关闭分享",
 "百科", "武器", "战略配备", "盔甲", "强化资源", "装饰", "选择", "下一页", "上一页", "资料状态"}
 COMMANDS |= {"签到", "我的等级", "等级表", "签到排行", "菜单", "战备英雄", "战备排行", "战备记录", "结束战备", "小贴士", "开源项目"}
+CAREER_COMMANDS = frozenset({
+    "战绩", "查战绩", "获取战绩", "下载助手", "获取验证码", "同步帮助", "绑定", "解绑",
+    "分享战绩", "关闭分享",
+})
+PROACTIVE_COMMANDS = frozenset({
+    "订阅", "取消订阅", "订阅列表", "绑定推送", "推送设置", "开启推送", "暂停推送", "恢复推送",
+})
+DISABLED_COMMANDS = CAREER_COMMANDS | PROACTIVE_COMMANDS
 ALIASES = {
     "源码": "开源项目", "github": "开源项目", "open_source": "开源项目",
     "tips": "小贴士", "tip": "小贴士", "小貼士": "小贴士", "加载提示": "小贴士",
@@ -89,7 +97,7 @@ def parse_command(text: str) -> Command:
         raise CommandError("请输入命令，例如：战况。输入“帮助”查看全部命令。")
     name = ALIASES.get(pieces[0].casefold(), pieces[0])
     if name not in COMMANDS:
-        raise CommandError("未识别的命令。可用：战况、主线、星球、星图、进攻、防守、玩家、战绩、新闻、补给线、帮助。")
+        raise CommandError("未识别的命令。可用：战况、主线、星球、星图、进攻、防守、玩家、新闻、补给线、帮助。")
     if name == "查战绩":
         name = "战绩"
     if name == "战报":
@@ -105,7 +113,7 @@ def parse_command(text: str) -> Command:
     elif name == "战绩" and argument:
         argument=argument.upper()
         if not re.fullmatch(r"HD2-[A-HJ-NP-Z2-9]{12}", argument):
-            raise CommandError("请使用快照 ID，例如：战绩 HD2-ABCDEFGH2345；不支持按 SteamID 或昵称查询。")
+            raise CommandError("请使用有效的结果编号。")
     elif name in {"小贴士", "菜单", "战备英雄", "推送设置", "绑定", "订阅", "取消订阅", "绑定推送", "星图", "战线", "区域", "更新", "补丁",
                   "公告", "控制中心", "百科", "武器", "战略配备", "盔甲", "强化资源", "装饰", "战争债券", "选择"}:
         pass  # Validated by the relevant service, never used as a recipient ID.

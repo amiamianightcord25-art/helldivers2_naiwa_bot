@@ -29,7 +29,8 @@ async def test_channel_dm_help_replies_to_virtual_dm_guild():
     bodies = [call.kwargs.get("content", "")
               + getattr(call.kwargs.get("markdown"), "content", "")
               for call in bot.post_dms_messages.await_args_list]
-    assert "战绩" in "\n".join(bodies)
+    assert "战绩" not in "\n".join(bodies)
+    assert "订阅" not in "\n".join(bodies)
     assert reply["keyboard"].content.rows[0].buttons[0].action.data == "菜单"
     assert not {"openid", "group_openid", "msg_seq", "msg_type"} & reply.keys()
     bot.post_c2c_messages.assert_not_awaited()

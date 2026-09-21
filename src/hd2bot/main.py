@@ -25,11 +25,7 @@ async def _run_application(settings: Settings, args) -> int:
     from hd2bot.cli import run_cli
     from hd2bot.router import CommandRouter
     from hd2bot.services.checkin import CheckinService
-    from hd2bot.services.group_push import GroupPushAccess
     from hd2bot.services.menu import MenuService
-    from hd2bot.services.notifications import NotificationManager
-    from hd2bot.services.push_access import PushAccess
-    from hd2bot.services.release_notice import ReleaseNoticeService
     from hd2bot.services.stratagem_hero import StratagemHeroService
     from hd2bot.steam import SteamService
     from hd2bot.storage.database import Database
@@ -37,20 +33,13 @@ async def _run_application(settings: Settings, args) -> int:
 
     async with (Database(settings.database_path) as db, create_service(settings) as service,
                 create_career_service(settings) as career, SteamService(settings) as steam):
-        access = PushAccess(db, settings.qq_push_user,
-                            settings.database_path.parent / "push_pairing.private.json")
-        access = GroupPushAccess(access, db, settings.database_path.parent / "group_push.json", settings.qq_app_id)
-        release_notices = ReleaseNoticeService(
-            db, settings.root / "data/release_notice.json", access=access,
-        )
         checkin = CheckinService(db)
         hero = StratagemHeroService(db)
         await checkin.initialize()
         await hero.initialize()
-        router = CommandRouter(service, career,
-                               NotificationManager(db, service, access=access, steam=steam,
-                                                   release_notices=release_notices),
-                               steam=steam, catalog=CatalogService(settings.wiki_catalog_path),
+        router = CommandRouter(service, career, notifications=None, steam=steam,
+                               career_enabled=False, proactive_enabled=False,
+                               catalog=CatalogService(settings.wiki_catalog_path),
                                checkin=checkin, hero=hero,
                                menu=MenuService(settings.database_path.parent / "menu.json"))
         if args.command is not None:

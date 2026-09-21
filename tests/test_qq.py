@@ -618,5 +618,5 @@ async def test_real_notice_matcher_sends_added_welcome(framework, monkeypatch, t
     await real_bot.handle_event(added(scope))
     send.assert_awaited_once()
     assert send.await_args.kwargs["event_id"] == "added-event"
-    assert "战绩" in send.await_args.kwargs["content"]
+    assert "个人同步和主动推送当前暂停" in send.await_args.kwargs["content"]
     await dispatcher.close()

@@ -20,6 +20,7 @@ async def test_menu_all_scenes_has_command_buttons_and_text(scope):
         "／指令面板", context=ChatContext(scope, "target", "member"),
     )
     assert "签到" in result.text and "战备英雄" in result.text
+    assert "战绩" not in result.text and "订阅" not in result.text
     assert any(button.command == "签到" for row in result.keyboard for button in row)
     dispatcher = QQDispatcher(Settings(image_enabled=False), CommandRouter(None))
     bot = AsyncMock()

@@ -9,7 +9,13 @@ from hd2bot.career.formatter import format_career, format_career_error
 from hd2bot.career.models import SNAPSHOT_RETENTION_DAYS, CareerError
 from hd2bot.career.onboarding import CareerOnboarding
 from hd2bot.career.service import CareerService
-from hd2bot.commands.parser import command_text, parse_command
+from hd2bot.commands.parser import (
+    ALIASES,
+    CAREER_COMMANDS,
+    PROACTIVE_COMMANDS,
+    command_text,
+    parse_command,
+)
 from hd2bot.commands.search import search_planets
 from hd2bot.hd2.errors import CommandError, HD2APIError
 from hd2bot.hd2.service import DataResult, HD2Service
@@ -35,10 +41,6 @@ HELP = (
     "小贴士：随机游戏加载提示；小贴士 <编号> · 小贴士 来源\n"
     "战况 · 主线 · 星球 <中文/英文名/编号>\n"
     "进攻 · 防守 · 玩家 · 帮助\n"
-    "私聊：获取战绩（下载与解压指引）→ 打开助手 → 获取验证码 → 生成并提交胶囊\n"
-    "战绩 / 查战绩 / 查询战绩：读取本人快照；群聊：查询战绩 <快照ID>\n"
-    "下载助手 · 获取验证码 · 同步帮助 · 解绑（私聊管理）\n"
-    "分享战绩：更换分享ID · 关闭分享（私聊管理）\n"
     "新闻 / 战报：最近列表 · 新闻 列表 <页码> · 新闻 <战报ID>\n"
     "补给线 <星球>\n"
     "星图 · 星图 <星球>：银河总览 / 局部补给图\n"
@@ -49,22 +51,20 @@ HELP = (
     "百科 · 武器/战略配备/盔甲/强化资源/装饰 [名称或编号]\n"
     "战争债券 [名称]：本地 Wiki 快照与关联装备\n"
     "列表后回复序号选择；下一页 / 上一页 · 资料状态\n"
-    "群主/管理员：开启推送 · 推送设置 · 暂停推送 · 恢复推送\n"
-    "订阅 主线/防守/星球 <名称>/战况 [分钟]\n"
-    "订阅 新闻/公告/DSS/战役/区域/补丁（群内先开启；私聊限已绑定推送用户）\n"
-    "订阅列表 · 取消订阅\n"
     "指令可加 /。例如：星球 Meridia\n\n" + OPEN_SOURCE_BRIEF
 )
 UNAVAILABLE = (
     "🚨 银河战争数据暂时无法取得。\n"
     "超级地球通讯网络可能正在维护，请稍后再试。"
 )
+FEATURE_OFFLINE = "该功能当前已下线。"
 
 
 class CommandRouter:
     def __init__(self, service: HD2Service, career: CareerService | None = None,
                  notifications=None, steam=None, catalog=None, onboarding=None,
-                 checkin=None, hero=None, menu=None, tips=None):
+                 checkin=None, hero=None, menu=None, tips=None,
+                 *, career_enabled=True, proactive_enabled=True):
         self.service = service
         self.career = career
         self.notifications = notifications
@@ -75,6 +75,8 @@ class CommandRouter:
         self.hero = hero
         self.menu = menu
         self.tips = tips
+        self.career_enabled = career_enabled
+        self.proactive_enabled = proactive_enabled
 
     async def _hero_reply(self, text: str, context: ChatContext | None):
         if self.hero is None or context is None or not context.user_id:
@@ -123,9 +125,20 @@ class CommandRouter:
 
     async def _dispatch(self, content: str, *, context: ChatContext | None = None) -> CommandReply:
         # Check the envelope before command parsing/search can echo user input.
-        if (context is not None and not context.is_private and isinstance(content, str)
+        if (not self.career_enabled and isinstance(content, str)
+                and re.search(r"HD2v1\s*[:：]", unicodedata.normalize("NFKC", content), re.IGNORECASE)):
+            return CommandReply(FEATURE_OFFLINE)
+        if (self.career_enabled and context is not None and not context.is_private
+                and isinstance(content, str)
                 and re.search(r"HD2v1\s*[:：]", unicodedata.normalize("NFKC", content), re.IGNORECASE)):
             return CommandReply(self.onboarding.group_guide())
+        if not self.career_enabled or not self.proactive_enabled:
+            raw = command_text(content)
+            head = raw.split(maxsplit=1)[0].casefold() if raw else ""
+            normalized = ALIASES.get(head, head)
+            if ((not self.career_enabled and normalized in CAREER_COMMANDS)
+                    or (not self.proactive_enabled and normalized in PROACTIVE_COMMANDS)):
+                return CommandReply(FEATURE_OFFLINE)
         try:
             command = parse_command(content)
         except CommandError:
@@ -133,6 +146,9 @@ class CommandRouter:
             if reply is not None:
                 return reply
             raise
+        if (not self.career_enabled and command.name in CAREER_COMMANDS) or (
+                not self.proactive_enabled and command.name in PROACTIVE_COMMANDS):
+            return CommandReply(FEATURE_OFFLINE)
         results: list[DataResult] = []
         card = None
         if command.name == "菜单":

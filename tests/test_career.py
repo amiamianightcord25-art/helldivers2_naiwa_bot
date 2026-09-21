@@ -304,9 +304,20 @@ async def test_career_unavailable_does_not_break_other_commands(tmp_path):
     assert '配置不可用' in await router.handle('战绩')
     assert await router.handle('帮助') == HELP
     assert '尚未配置' in await CommandRouter(AsyncMock()).handle('战绩')
-    assert '不支持' in await router.handle('战绩 76561198000000000')
+    assert '有效的结果编号' in await router.handle('战绩 76561198000000000')
     with pytest.raises(CommandError):
         parse_command('查战绩 some-other-person')
+
+
+async def test_production_router_disables_career_and_proactive_commands():
+    client = AsyncMock()
+    career = CareerService(Settings(provider="auto"), client=client)
+    router = CommandRouter(AsyncMock(), career, career_enabled=False, proactive_enabled=False)
+
+    assert await router.handle("战绩") == "该功能当前已下线。"
+    assert await router.handle("订阅 主线") == "该功能当前已下线。"
+    client.query.assert_not_awaited()
+    client.request_user.assert_not_awaited()
 
 
 async def test_career_connection_failure_returns_safe_unavailable_message():
