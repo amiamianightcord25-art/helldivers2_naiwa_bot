@@ -226,6 +226,8 @@ class NativeUIClient:
         self._expires_at = 0.0
 
     async def __aenter__(self) -> NativeUIClient:
+        if self.settings.bot_backend != "official":
+            raise NativeUIError("NapCat 使用文字菜单，无需配置 QQ 官方指令面板")
         if not self.settings.qq_app_id or not self.settings.qq_app_secret:
             raise NativeUIError("QQ_APP_ID 和 QQ_APP_SECRET 尚未配置")
         if self._session is None:

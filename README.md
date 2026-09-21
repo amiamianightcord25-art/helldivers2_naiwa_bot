@@ -1,7 +1,9 @@
-# HELLDIVERS 2 QQ 官方机器人
+# HELLDIVERS 2 QQ 机器人
 
-Python 3.11+ 项目，使用 NoneBot2 2.5.0 与 QQ 官方平台适配器 1.7.2，支持 Windows 开发与 Linux 服务器运行。
-CLI、NoneBot 命令和 HTML 图片共用同一数据核心。当前版本 0.2.0。
+Python 3.11+ 项目，使用 NoneBot2 2.5.0，支持 QQ 官方平台和 NapCat（OneBot V11）两种接入。支持 Windows 开发与 Linux 服务器运行。
+
+v0.3.0 新增 NapCat 私聊和群内 @ 查询。通过私有配置中的 BOT_BACKEND 选择 official 或 napcat，默认保留官方接入。NapCat 连接登录账号已加入的群，菜单使用文字指令。安装与接入步骤见 [NapCat 配置](NAPCAT_CN.md)。
+CLI、NoneBot 命令和 HTML 图片共用同一数据核心。当前版本 0.3.0。
 当前使用说明以本 README 和根目录专题文档为准；`research/` 保存注明日期的研究与验收证据，阅读方式见 [研究记录索引](research/README.md)。
 
 服务器安装、字体与 emoji、运行参数及 systemd 管理见 [Linux 部署说明](DEPLOYMENT_CN.md)。机器人使用出站 WebSocket，无需公网 Webhook。
@@ -301,6 +303,8 @@ HD2_WIKI_SYNC_INTERVAL_HOURS=24
 主动消息、订阅和版本公告当前下线。Bot 运行入口不会启动主动通知任务，也不会创建或发送主动推送。
 
 ## QQ 官方平台接入
+
+本节用于 BOT_BACKEND=official；NapCat 无需填写官方应用凭据，使用 [NapCat 配置](NAPCAT_CN.md)。
 
 在 `.env` 本地填写：
 

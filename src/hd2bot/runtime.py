@@ -111,6 +111,13 @@ def notify_ready() -> None:
         runtime.ready()
 
 
+def notify_disconnected() -> None:
+    runtime = _current.get()
+    if runtime is not None and runtime.state["status"] == "ready":
+        runtime.state["status"] = "starting"
+        runtime._write()
+
+
 class BotRuntime:
     def __init__(self, settings):
         self.settings = settings
@@ -122,7 +129,9 @@ class BotRuntime:
             "instance": self.instance, "pid": os.getpid(),
             "entry": str(settings.root / "run.py"),
             "started_at": utcnow().isoformat(), "status": "starting",
-            "transport": settings.qq_transport, "sandbox": settings.qq_sandbox,
+            "backend": settings.bot_backend,
+            "transport": "onebot_v11" if settings.bot_backend == "napcat" else settings.qq_transport,
+            "sandbox": settings.qq_sandbox if settings.bot_backend == "official" else None,
         }
         self._token = None
 

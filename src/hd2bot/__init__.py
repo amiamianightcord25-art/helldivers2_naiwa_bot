@@ -1,3 +1,3 @@
-"""HELLDIVERS 2 data core and official QQ adapter."""
+"""HELLDIVERS 2 data core and selectable NoneBot2 transports."""
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"

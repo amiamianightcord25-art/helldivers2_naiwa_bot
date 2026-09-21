@@ -10,7 +10,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
-from hd2bot.config import Settings  # noqa: E402
+from hd2bot.config import Settings, validate_bot_settings  # noqa: E402
 from hd2bot.runtime import process_status, request_stop  # noqa: E402
 
 
@@ -37,8 +37,10 @@ def start_bot(settings, timeout: float) -> int:
         show_status(settings, state)
         return 0
     previous_instance = state.get("instance")
-    if not settings.qq_app_id or not settings.qq_app_secret:
-        print("请先在项目 .env 填写 QQ_APP_ID 和 QQ_APP_SECRET。")
+    try:
+        validate_bot_settings(settings)
+    except ValueError as exc:
+        print(str(exc))
         return 2
     settings.log_dir.mkdir(parents=True, exist_ok=True)
     interpreter = settings.root / ".venv" / ("Scripts/python.exe" if os.name == "nt" else "bin/python")

@@ -19,6 +19,7 @@ PRIVATE_NAMES = {"config.toml", "config.json", "config.yaml", "config.yml", ".en
 PRIVATE_SUFFIXES = {".pem", ".key", ".p12", ".pfx", ".db", ".sqlite", ".sqlite3"}
 RUNTIME_PARTS = {
     "data", "logs", ".ssh", ".venv", "venv", "tmp", ".cache", "outputs", ".pytest-tmp",
+    "napcat-data", "napcat-config", "qq-data",
 }
 
 
@@ -30,6 +31,8 @@ def private_path(name: str) -> bool:
     path = Path(name)
     lower = path.name.lower()
     return (any(part.lower() in RUNTIME_PARTS for part in path.parts)
+            or (bool(path.parts) and path.parts[0].lower() == "napcat")
+            or (lower.startswith(("onebot11_", "napcat_")) and lower.endswith(".json"))
             or lower in PRIVATE_NAMES or ".private." in lower
             or lower == "project_context_cn.md" or lower == "qq_experience_qr.png"
             or lower.startswith(("id_rsa", "id_ed25519", "cookies.", "credentials."))
@@ -43,7 +46,7 @@ def known_local_values() -> set[bytes]:
     values = set()
     fields = re.compile(
         r"secret|token|password|cookie|session|api.?key|app.?id|push.?user|contact|"
-        r"^url$|ssh.?host|binding.?id|manager.?user.?ids|allowed.?groups", re.I,
+        r"^url$|ws.?url$|ssh.?host|binding.?id|manager.?user.?ids|allowed.?groups", re.I,
     )
 
     def collect(key, value):

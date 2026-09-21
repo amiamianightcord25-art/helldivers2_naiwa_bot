@@ -4,6 +4,7 @@ import math
 import os
 from dataclasses import dataclass, field
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from dotenv import load_dotenv
 
@@ -49,6 +50,10 @@ class Settings:
     log_level: str = "INFO"
     log_dir: Path = PROJECT_ROOT / "logs"
     database_path: Path = PROJECT_ROOT / "data/bot.db"
+    bot_backend: str = "official"
+    napcat_ws_url: str = field(default="", repr=False)
+    napcat_access_token: str = field(default="", repr=False)
+    napcat_allowed_groups: tuple[str, ...] = field(default=(), repr=False)
     qq_app_id: str = ""
     qq_app_secret: str = field(default="", repr=False)
     qq_sandbox: bool = True
@@ -94,6 +99,11 @@ class Settings:
             log_level=get("LOG_LEVEL", "INFO").upper(),
             log_dir=_path(get("LOG_DIR", "logs"), root),
             database_path=_path(get("DATABASE_PATH", "data/bot.db"), root),
+            bot_backend=get("BOT_BACKEND", "official").strip().lower(),
+            napcat_ws_url=get("NAPCAT_WS_URL", "").strip(),
+            napcat_access_token=get("NAPCAT_ACCESS_TOKEN", ""),
+            napcat_allowed_groups=tuple(part.strip() for part in
+                                       get("NAPCAT_ALLOWED_GROUPS", "").split(",") if part.strip()),
             qq_app_id=get("QQ_APP_ID", ""), qq_app_secret=get("QQ_APP_SECRET", ""),
             qq_sandbox=_boolean(get("QQ_SANDBOX", "true")),
             qq_transport=get("QQ_TRANSPORT", "websocket").lower(),
@@ -120,6 +130,16 @@ class Settings:
             wiki_sync_enabled=_boolean(get("HD2_WIKI_SYNC_ENABLED", "true"), "HD2_WIKI_SYNC_ENABLED"),
             wiki_sync_interval_hours=float(get("HD2_WIKI_SYNC_INTERVAL_HOURS", "24")),
         )
+        if settings.bot_backend not in {"official", "napcat"}:
+            raise ValueError("BOT_BACKEND 必须为 official/napcat")
+        if any(not _valid_group_id(value) for value in settings.napcat_allowed_groups):
+            raise ValueError("NAPCAT_ALLOWED_GROUPS 必须为逗号分隔的群号或留空")
+        if settings.napcat_ws_url:
+            validate_napcat_url(settings.napcat_ws_url)
+        if settings.napcat_access_token and (
+                len(settings.napcat_access_token) > 256
+                or any(not 33 <= ord(c) <= 126 for c in settings.napcat_access_token)):
+            raise ValueError("NAPCAT_ACCESS_TOKEN 格式无效")
         if settings.provider not in {"auto", "community", "captured", "mock"}:
             raise ValueError("HD2_PROVIDER 必须为 auto/community/captured/mock")
         if (not math.isfinite(settings.timeout) or settings.timeout <= 0
@@ -159,3 +179,39 @@ class Settings:
                 or not 6 <= settings.wiki_sync_interval_hours <= 720):
             raise ValueError("百科同步间隔范围6..720小时")
         return settings
+
+
+def _valid_group_id(value: str) -> bool:
+    return value.isascii() and value.isdecimal() and 1 <= len(value) <= 20 and int(value) > 0
+
+
+def validate_napcat_url(value: str) -> None:
+    try:
+        parsed = urlsplit(value)
+        if (parsed.scheme not in {"ws", "wss"} or not parsed.hostname
+                or parsed.username is not None or parsed.password is not None
+                or parsed.query or parsed.fragment or len(value) > 2048
+                or any(c.isspace() or ord(c) < 32 for c in value)):
+            raise ValueError
+        if parsed.port is not None and not 1 <= parsed.port <= 65535:
+            raise ValueError
+    except ValueError:
+        raise ValueError("NAPCAT_WS_URL 必须为不含账号、令牌和查询参数的 ws/wss 地址") from None
+
+
+def validate_bot_settings(settings: Settings) -> None:
+    """Validate only the selected live transport; CLI has no login requirement."""
+    if settings.bot_backend == "official":
+        if not settings.qq_app_id or not settings.qq_app_secret:
+            raise ValueError("请在私有配置中填写 QQ_APP_ID 和 QQ_APP_SECRET。")
+        if settings.qq_transport != "websocket":
+            raise ValueError("官方 QQ 接入仅支持 websocket。")
+    elif settings.bot_backend == "napcat":
+        if not settings.napcat_ws_url or not settings.napcat_access_token:
+            raise ValueError("请在私有配置中填写 NAPCAT_WS_URL 和 NAPCAT_ACCESS_TOKEN。")
+        validate_napcat_url(settings.napcat_ws_url)
+        if (len(settings.napcat_access_token) > 256
+                or any(not 33 <= ord(c) <= 126 for c in settings.napcat_access_token)):
+            raise ValueError("NAPCAT_ACCESS_TOKEN 格式无效")
+    else:
+        raise ValueError("BOT_BACKEND 必须为 official/napcat")

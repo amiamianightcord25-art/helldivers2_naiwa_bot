@@ -1,5 +1,8 @@
 # Linux 服务器部署
 
+支持官方 QQ 与 NapCat 两种入口，默认 BOT_BACKEND=official。NapCat 的 WebSocket、登录状态和 systemd 接入步骤见 [NapCat 配置](NAPCAT_CN.md)。更换入口前先停止当前服务，同一份工作区只运行一个 Bot 实例；账号和连接配置继续放在私有环境文件中。
+
+
 以下是 Ubuntu 24.04、Python 3.12、2 核 / 2 GB 内存的通用部署方案，不代表每位部署者已有同样环境。机器人由独立 `hd2bot` 用户运行；管理操作先 SSH 登录，再执行 `sudo -i`。
 
 | 内容 | 默认路径 |

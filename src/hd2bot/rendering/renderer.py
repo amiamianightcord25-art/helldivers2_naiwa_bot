@@ -63,6 +63,7 @@ class HtmlRenderer:
         cache_dir: Path | None = None,
         max_concurrency: int = 2,
         qr_path: Path | None = None,
+        include_qr: bool = True,
     ) -> None:
         if not 720 <= width <= 1800:
             raise ValueError("render width must be between 720 and 1800")
@@ -92,7 +93,7 @@ class HtmlRenderer:
         # A distributable checkout has no operator QR and renders without it.
         qr = qr_path or files("hd2bot").joinpath("assets/qq_experience_qr.png")
         self._qr_data = ("data:image/png;base64," + base64.b64encode(qr.read_bytes()).decode("ascii")
-                         if qr.is_file() else "")
+                         if include_qr and qr.is_file() else "")
         self._playwright: Playwright | None = None
         self._browser: Browser | None = None
         self._launch_lock = asyncio.Lock()

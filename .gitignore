@@ -75,3 +75,12 @@ research/*/ready*.json
 research/*/*.json
 research/*/*.py
 research/*_20*/
+
+# NapCat installation, account state and runtime network configuration.
+/NapCat/
+/napcat/
+/napcat-data/
+/napcat-config/
+/qq-data/
+onebot11_*.json
+napcat_*.json

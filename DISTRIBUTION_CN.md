@@ -4,7 +4,7 @@
 
 | 自定义内容 | 空白模板 | 本地运行文件 |
 | --- | --- | --- |
-| QQ 应用、运行参数、联系信息、路径 | `.env.example` | `.env` |
+| 接入方式、QQ 应用、NapCat 连接、运行参数、联系信息、路径 | `.env.example` | `.env` |
 | 更新日志版本、标题和正文 | `release_notice.example.json` | `data/release_notice.json` |
 | 自定义消息菜单 | `menu.example.json` | `data/menu.json` |
 | QQ 原生菜单、指令面板与归属标记 | `qq_native_ui.example.json` | `data/qq_native_ui.json` |

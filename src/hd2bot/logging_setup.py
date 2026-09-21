@@ -38,6 +38,6 @@ def configure_logging(settings: Settings) -> None:
     )]
     for handler in handlers:
         handler.setFormatter(formatter)
-        handler.addFilter(SensitiveFilter((settings.qq_app_secret,)))
+        handler.addFilter(SensitiveFilter((settings.qq_app_secret, settings.napcat_access_token, settings.napcat_ws_url)))
     logging.basicConfig(level=settings.log_level, handlers=handlers, force=True)
     logging.getLogger("aiohttp.access").setLevel(logging.WARNING)
